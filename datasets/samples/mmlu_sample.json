@@ -1,0 +1,35 @@
+[
+  {
+    "question": "If a pentagon P with vertices at (\u2013 2, \u2013 4), (\u2013 4, 1), (\u20131, 4), (2, 4), and (3, 0) is reflected across the line y = x to get a new pentagon, P\u2019, then one of the vertices of P\u2019 is",
+    "subject": "high_school_mathematics",
+    "choices": [
+      "(0, \u2013 3)",
+      "(4, 1)",
+      "(2, 2)",
+      "(\u2013 4, \u20132)"
+    ],
+    "answer": 3
+  },
+  {
+    "question": "The length of a rectangle is twice its width. Given the length of the diagonal is $5\\sqrt{5}$, find the area of the rectangle.",
+    "subject": "high_school_mathematics",
+    "choices": [
+      "2500",
+      "2",
+      "50",
+      "25"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "A positive integer n is called \u201cpowerful\u201d if, for every prime factor p of n, p^2 is also a factor of n. An example of a powerful number is",
+    "subject": "high_school_mathematics",
+    "choices": [
+      "392",
+      "336",
+      "300",
+      "297"
+    ],
+    "answer": 0
+  }
+]

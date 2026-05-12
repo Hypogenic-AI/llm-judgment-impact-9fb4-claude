@@ -1,0 +1,1 @@
+{"content": "Mark lost 10 pounds per month for 3 months.  \nTotal weight lost = 10 pounds/month \u00d7 3 months = 30 pounds.  \nHis final weight after losing 30 pounds is 70 pounds.  \nTherefore, his initial weight = final weight + weight lost = 70 + 30 = 100 pounds.\n\nAnswer: 100", "prompt_tokens": 93, "completion_tokens": 71, "total_tokens": 164, "model": "gpt-4.1-mini"}

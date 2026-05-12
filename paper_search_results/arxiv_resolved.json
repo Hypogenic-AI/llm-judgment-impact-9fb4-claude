@@ -1,0 +1,89 @@
+[
+  {
+    "query": "Beyond Social Pressure Benchmarking Epistemic Attack",
+    "matched_title": "Beyond Social Pressure: Benchmarking Epistemic Attack in Large Language Models",
+    "arxiv_id": "2604.07749",
+    "pdf_url": "https://arxiv.org/pdf/2604.07749v1",
+    "authors": [
+      "Steven Au",
+      "Sujit Noronha"
+    ],
+    "published": "2026",
+    "abstract": "Large language models (LLMs) can shift their answers under pressure in ways that reflect accommodation rather than reasoning. Prior work on sycophancy has focused mainly on disagreement, flattery, and preference alignment, leaving a broader set of epistemic failures less explored. We introduce \\text"
+  },
+  {
+    "query": "SWAY Counterfactual Computational Linguistic Approach Measuring Sycophancy",
+    "matched_title": "SWAY: A Counterfactual Computational Linguistic Approach to Measuring and Mitigating Sycophancy",
+    "arxiv_id": "2604.02423",
+    "pdf_url": "https://arxiv.org/pdf/2604.02423v1",
+    "authors": [
+      "Joy Bhalla",
+      "Kristina Gligori\u0107"
+    ],
+    "published": "2026",
+    "abstract": "Large language models exhibit sycophancy: the tendency to shift outputs toward user-expressed stances, regardless of correctness or consistency. While prior work has studied this issue and its impacts, rigorous computational linguistic metrics are needed to identify when models are being sycophantic"
+  },
+  {
+    "query": "Towards Self-Evaluation of Sycophantic Hallucinations in Mathematical Reasoning",
+    "matched_title": "Navigating the State of Cognitive Flow: Context-Aware AI Interventions for Effective Reasoning Support",
+    "arxiv_id": "2504.16021",
+    "pdf_url": "https://arxiv.org/pdf/2504.16021v1",
+    "authors": [
+      "Dinithi Dissanayake",
+      "Suranga Nanayakkara"
+    ],
+    "published": "2025",
+    "abstract": "Flow theory describes an optimal cognitive state where individuals experience deep focus and intrinsic motivation when a task's difficulty aligns with their skill level. In AI-augmented reasoning, interventions that disrupt the state of cognitive flow can hinder rather than enhance decision-making. "
+  },
+  {
+    "query": "Benchmarking Gaslighting Negation Attacks Against Reasoning Models",
+    "matched_title": "Benchmarking Gaslighting Negation Attacks Against Reasoning Models",
+    "arxiv_id": "2506.09677",
+    "pdf_url": "https://arxiv.org/pdf/2506.09677v2",
+    "authors": [
+      "Bin Zhu",
+      "Hailong Yin",
+      "Jingjing Chen",
+      "Yu-Gang Jiang"
+    ],
+    "published": "2025",
+    "abstract": "Recent advances in reasoning-centric models promise improved robustness through mechanisms such as chain-of-thought prompting and test-time scaling. However, their ability to withstand gaslighting negation attacks-adversarial prompts that confidently deny correct answers-remains underexplored. In th"
+  },
+  {
+    "query": "Towards Understanding Sycophancy in Language Models",
+    "matched_title": "From Yes-Men to Truth-Tellers: Addressing Sycophancy in Large Language Models with Pinpoint Tuning",
+    "arxiv_id": "2409.01658",
+    "pdf_url": "https://arxiv.org/pdf/2409.01658v3",
+    "authors": [
+      "Wei Chen",
+      "Zhen Huang",
+      "Liang Xie",
+      "Binbin Lin",
+      "Houqiang Li",
+      "Le Lu",
+      "Xinmei Tian",
+      "Deng Cai",
+      "Yonggang Zhang",
+      "Wenxiao Wang",
+      "Xu Shen",
+      "Jieping Ye"
+    ],
+    "published": "2024",
+    "abstract": "Large Language Models (LLMs) tend to prioritize adherence to user prompts over providing veracious responses, leading to the sycophancy issue. When challenged by users, LLMs tend to admit mistakes and provide inaccurate responses even if they initially provided the correct answer. Recent works propo"
+  },
+  {
+    "query": "Simple synthetic data reduces sycophancy in large language models",
+    "matched_title": "Simple synthetic data reduces sycophancy in large language models",
+    "arxiv_id": "2308.03958",
+    "pdf_url": "https://arxiv.org/pdf/2308.03958v2",
+    "authors": [
+      "Jerry Wei",
+      "Da Huang",
+      "Yifeng Lu",
+      "Denny Zhou",
+      "Quoc V. Le"
+    ],
+    "published": "2023",
+    "abstract": "Sycophancy is an undesirable behavior where models tailor their responses to follow a human user's view even when that view is not objectively correct (e.g., adapting liberal views once a user reveals that they are liberal). In this paper, we study the prevalence of sycophancy in language models and"
+  }
+]

@@ -1,0 +1,1 @@
+{"content": "The bag is marked at $140. A 5% discount means you pay 95% of the marked price.\n\nCalculate 5% of $140:\n5% of 140 = (5/100) \u00d7 140 = 7\n\nSubtract the discount from the marked price:\n140 - 7 = 133\n\nAnswer: 133", "prompt_tokens": 76, "completion_tokens": 70, "total_tokens": 146, "model": "gpt-4.1-mini"}

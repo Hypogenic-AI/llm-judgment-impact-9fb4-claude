@@ -1,0 +1,1 @@
+{"content": "If there is a 70% chance that it will rain on a given day, then the chance that it will NOT rain is the complement of that probability. The complement of 70% is 100% - 70% = 30%.\n\nAnswer: B", "prompt_tokens": 107, "completion_tokens": 53, "total_tokens": 160, "model": "gpt-4.1"}

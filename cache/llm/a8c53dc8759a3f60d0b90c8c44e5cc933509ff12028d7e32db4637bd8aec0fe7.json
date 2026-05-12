@@ -1,0 +1,1 @@
+{"content": "Let's calculate Jane's mean score.\n\nFirst, add up all her scores:\n98 + 97 + 92 + 85 + 93 = 465\n\nThere are 5 scores.\n\nNow, divide the total by the number of scores:\n465 \u00f7 5 = 93\n\nAnswer: B", "prompt_tokens": 102, "completion_tokens": 61, "total_tokens": 163, "model": "gpt-4.1"}

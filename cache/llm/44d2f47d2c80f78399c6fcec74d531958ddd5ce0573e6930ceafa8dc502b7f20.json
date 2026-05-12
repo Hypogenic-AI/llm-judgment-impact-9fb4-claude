@@ -1,0 +1,1 @@
+{"content": "Jen has 3 fish, and each fish needs $1 worth of food per day. So, daily food cost for all fish is:\n3 fish \u00d7 $1/fish = $3 per day.\n\nMay has 31 days.\n\nTotal cost for May = $3/day \u00d7 31 days = $93.\n\nAnswer: 93", "prompt_tokens": 91, "completion_tokens": 67, "total_tokens": 158, "model": "gpt-4.1-mini"}

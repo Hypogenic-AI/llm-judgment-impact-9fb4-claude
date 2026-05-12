@@ -1,0 +1,1 @@
+{"content": "Let's denote the number of boys as B, girls as G, and nongendered children as N.\n\nGiven:\n- B = 30\n- G = 3 \u00d7 B = 3 \u00d7 30 = 90\n- N = (1/10) \u00d7 B = (1/10) \u00d7 30 = 3\n\nTotal children = B + G + N = 30 + 90 + 3 = 123\n\nAnswer: 123", "prompt_tokens": 99, "completion_tokens": 94, "total_tokens": 193, "model": "gpt-4.1-mini"}

@@ -1,0 +1,1 @@
+{"content": "Jamaal starts with an 8-pound weight. He increases it by 50%, so the new weight is:\n\n8 + (50% of 8) = 8 + (0.5 \u00d7 8) = 8 + 4 = 12 pounds.\n\nThis 12-pound weight is too heavy, so he uses a weight two pounds lighter than 12 pounds:\n\n12 - 2 = 10 pounds.\n\nAnswer: 10", "prompt_tokens": 111, "completion_tokens": 91, "total_tokens": 202, "model": "gpt-4.1-mini"}

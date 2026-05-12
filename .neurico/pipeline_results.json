@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "stages": {
+    "resource_finder": {
+      "success": true,
+      "completion_marker": "/workspaces/llm-judgment-impact-9fb4-claude/.resource_finder_complete",
+      "outputs": {
+        "literature_review": "/workspaces/llm-judgment-impact-9fb4-claude/literature_review.md",
+        "resources_catalog": "/workspaces/llm-judgment-impact-9fb4-claude/resources.md",
+        "papers_dir": "/workspaces/llm-judgment-impact-9fb4-claude/papers",
+        "datasets_dir": "/workspaces/llm-judgment-impact-9fb4-claude/datasets",
+        "code_dir": "/workspaces/llm-judgment-impact-9fb4-claude/code"
+      },
+      "log_file": "/workspaces/llm-judgment-impact-9fb4-claude/logs/resource_finder_claude.log",
+      "transcript_file": "/workspaces/llm-judgment-impact-9fb4-claude/logs/resource_finder_claude_transcript.jsonl",
+      "elapsed_time": 1302.4167745113373
+    },
+    "experiment_runner": {
+      "success": true,
+      "return_code": 0,
+      "elapsed_time": 3475.2751853466034,
+      "log_file": "/workspaces/llm-judgment-impact-9fb4-claude/logs/execution_claude.log",
+      "transcript_file": "/workspaces/llm-judgment-impact-9fb4-claude/logs/execution_claude_transcript.jsonl"
+    }
+  },
+  "work_dir": "/workspaces/llm-judgment-impact-9fb4-claude"
+}

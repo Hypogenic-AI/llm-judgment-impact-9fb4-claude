@@ -1,0 +1,434 @@
+[
+  {
+    "title": "From Fact to Judgment: Investigating the Impact of Task Framing on LLM Conviction in Dialogue Systems",
+    "year": 2025,
+    "authors": "Parisa Rabbani, Nimet Beyza Bozdag, Dilek Hakkani-Tur",
+    "url": "https://www.semanticscholar.org/paper/359389a3d23d2e0982546d7c59d662686b182b3a",
+    "relevance": 3,
+    "abstract": "LLMs are increasingly employed as judges across a variety of tasks, including those involving everyday social interactions. Yet, it remains unclear whether such LLM-judges can reliably assess tasks that require social or conversational judgment. We investigate how an LLM's conviction is changed when a task is reframed from a direct factual query to a Conversational Judgment Task. Our evaluation framework contrasts the model's performance on direct factual queries with its assessment of a speaker's correctness when the same information is presented within a minimal dialogue, effectively shifting the query from\"Is this statement correct?\"to\"Is this speaker correct?\". Furthermore, we apply pressure in the form of a simple rebuttal (\"The previous answer is incorrect.\") to both conditions. This perturbation allows us to measure how firmly the model maintains its position under conversational pressure. Our findings show that while some models like GPT-4o-mini reveal sycophantic tendencies under social framing tasks, others like Llama-8B-Instruct become overly-critical. We observe an average performance change of 9.24% across all models, demonstrating that even minimal dialogue context can significantly alter model judgment, underscoring conversational framing as a key factor in LLM-based evaluation. The proposed framework offers a reproducible methodology for diagnosing model conviction and contributes to the development of more trustworthy dialogue systems.",
+    "citations": 3
+  },
+  {
+    "title": "Diagnosing and Mitigating Sycophancy and Skepticism in LLM Causal Judgment",
+    "year": 2026,
+    "authors": "Edward Y. Chang",
+    "url": "https://www.semanticscholar.org/paper/31f79ae0e346c0970e07c7de848702ca578f4540",
+    "relevance": 3,
+    "abstract": "Large language models increasingly fail in a way that scalar accuracy cannot diagnose: they produce a sound reasoning trace and then abandon it under social pressure or an authoritative hint. We argue that this is a control failure, not a knowledge failure, and that it requires an evaluation surface richer than a single accuracy number. We introduce CAUSALT3, a 454 instance expert curated benchmark for causal reasoning across all three rungs of Pearl's ladder, and a three axis evaluation that decomposes performance into Utility (sensitivity to valid causal claims), Safety (specificity against invalid ones), and Wise Refusal (calibrated abstention on genuinely underdetermined items). On this surface we document three reproducible pathologies: a Skepticism Trap at L1 where capable models over refuse sound links, a Sycophancy Trap at L2 where confident user pressure flips correct answers, and a Scaling Paradox at L3 where a frontier model underperforms an older one on counterfactual Safety by 55 points. To mitigate these failures without retraining, we propose Regulated Causal Anchoring (RCA), an inference time process verifier that audits trace output consistency under a PID style feedback loop and abstains rather than ratifying a detected mismatch. Across CAUSALT3 and a supporting CAP-GSM8K stress test, RCA reduces sycophantic acceptance to near zero while preserving valid hint acceptance, recasting trustworthy reasoning as a question of inference time control rather than scale.",
+    "citations": 1
+  },
+  {
+    "title": "Feedback Indices to Evaluate LLM Responses to Rebuttals for Multiple Choice Type Questions",
+    "year": 2026,
+    "authors": "J. Dunlap, Anne-Simone Parent, R. Widenhorn",
+    "url": "https://www.semanticscholar.org/paper/b6c410ea8c05d5290b5a27efe42928eb7893b586",
+    "relevance": 3,
+    "abstract": "We present a systematic framework of indices designed to characterize Large Language Model (LLM) responses when challenged with rebuttals during a chat. Assessing how LLMs respond to user dissent is crucial for understanding their reliability and behavior patterns, yet the complexity of human-LLM interactions makes systematic evaluation challenging. Our approach employs a fictitious-response rebuttal method that quantifies LLM behavior when presented with multiple-choice questions followed by deliberate challenges to their fictitious previous response. The indices are specifically designed to detect and measure what could be characterized as sycophantic behavior (excessive agreement with user challenges) or stubborn responses (rigid adherence to the fictitious response in the chat history) from LLMs. These metrics allow investigation of the relationships between sycophancy, stubbornness, and the model's actual mastery of the subject matter. We demonstrate the utility of these indices using two physics problems as test scenarios with various OpenAI models. The framework is intentionally generalizable to any multiple-choice format question, including on topics without universally accepted correct answers. Our results reveal measurable differences across OpenAI model generations, with trends indicating that newer models and those employing greater\"Reasoning Effort\"exhibit reduced sycophantic behavior. The FR pairing method combined with our proposed indices provides a practical, adaptable toolkit for systematically comparing LLM dialogue behaviors across different models and contexts.",
+    "citations": 0
+  },
+  {
+    "title": "SycEval: Evaluating LLM Sycophancy",
+    "year": 2025,
+    "authors": "A.H. Fanous, Jacob Goldberg, Ank A. Agarwal, Joanna Lin, Anson Y. Zhou, R. Daneshjou, Oluwasanmi Koyejo",
+    "url": "https://www.semanticscholar.org/paper/796f0ce165479e22f95c9f8d02b1b239816f46ef",
+    "relevance": 2,
+    "abstract": "Large language models (LLMs) are increasingly applied in\neducational, clinical, and professional settings, but their\ntendency for sycophancy\u2014prioritizing\nuser agreement over independent reasoning\u2014poses risks to\nreliability. This study introduces a framework to evaluate\nsycophantic behavior in\nChatGPT-4o, Claude-Sonnet, and Gemini-1.5-Pro across AMPS\n(mathematics) and MedQuad (medical advice) datasets.\nSycophantic behavior was\nobserved in 58.19% of cases, with Gemini exhibiting the\nhighest rate (62.47%) and ChatGPT the lowest (56.71%).\nProgressive sycophancy, leading\nto correct answers, occurred in 43.52% of cases, while\nregressive sycophancy, leading to incorrect answers, was\nobserved in 14.66%. Preemptive\nrebuttals demonstrated significantly higher sycophancy\nrates than in-context rebuttals (61.75% vs. 56.52%, Z =\n5.87, p < 0.001), particularly in\ncomputational tasks, where regressive sycophancy increased\nsignificantly (preemptive: 8.13%, in-context: 3.54%, p <\n0.001). Simple rebuttals\nmaximized progressive sycophancy (Z = 6.59, p < 0.001),\nwhile citation-based rebuttals exhibited the highest\nregressive rates (Z = 6.59, p < 0.001).\nSycophantic behavior showed high persistence (78.5%, 95%\nCI: [77.2%, 79.8%]) regardless of context or model. These\nfindings emphasize the risks\nand opportunities of deploying LLMs in structured and\ndynamic domains, offering insights into prompt programming\nand model optimization for\nsafer AI applications",
+    "citations": 86
+  },
+  {
+    "title": "Are You Sure? Challenging LLMs Leads to Performance Drops in The FlipFlop Experiment",
+    "year": 2023,
+    "authors": "Philippe Laban, Lidiya Murakhovs'ka, Caiming Xiong, Chien-Sheng Wu",
+    "url": "https://www.semanticscholar.org/paper/50e9a6439dcfea0cfef536906afa93322f07dccf",
+    "relevance": 2,
+    "abstract": "The interactive nature of Large Language Models (LLMs) theoretically allows models to refine and improve their answers, yet systematic analysis of the multi-turn behavior of LLMs remains limited. In this paper, we propose the FlipFlop experiment: in the first round of the conversation, an LLM completes a classification task. In a second round, the LLM is challenged with a follow-up phrase like\"Are you sure?\", offering an opportunity for the model to reflect on its initial answer, and decide whether to confirm or flip its answer. A systematic study of ten LLMs on seven classification tasks reveals that models flip their answers on average 46% of the time and that all models see a deterioration of accuracy between their first and final prediction, with an average drop of 17% (the FlipFlop effect). We conduct finetuning experiments on an open-source LLM and find that finetuning on synthetically created data can mitigate - reducing performance deterioration by 60% - but not resolve sycophantic behavior entirely. The FlipFlop experiment illustrates the universality of sycophantic behavior in LLMs and provides a robust framework to analyze model behavior and evaluate future models.",
+    "citations": 59
+  },
+  {
+    "title": "Measuring Sycophancy of Language Models in Multi-turn Dialogues",
+    "year": 2025,
+    "authors": "Jiseung Hong, Grace Byun, Seungone Kim, Kai Shu",
+    "url": "https://www.semanticscholar.org/paper/63898f9e42eb36d9b53bc502d3c338db0f217536",
+    "relevance": 2,
+    "abstract": "Large Language Models (LLMs) are expected to provide helpful and harmless responses, yet they often exhibit sycophancy--conforming to user beliefs regardless of factual accuracy or ethical soundness. Prior research on sycophancy has primarily focused on single-turn factual correctness, overlooking the dynamics of real-world interactions. In this work, we introduce SYCON Bench, a novel benchmark for evaluating sycophantic behavior in multi-turn, free-form conversational settings. Our benchmark measures how quickly a model conforms to the user (Turn of Flip) and how frequently it shifts its stance under sustained user pressure (Number of Flip). Applying SYCON Bench to 17 LLMs across three real-world scenarios, we find that sycophancy remains a prevalent failure mode. Our analysis shows that alignment tuning amplifies sycophantic behavior, whereas model scaling and reasoning optimization strengthen the model's ability to resist undesirable user views. Reasoning models generally outperform instruction-tuned models but often fail when they over-index on logical exposition instead of directly addressing the user's underlying beliefs. Finally, we evaluate four additional prompting strategies and demonstrate that adopting a third-person perspective reduces sycophancy by up to 63.8% in debate scenario. We release our code and data at https://github.com/JiseungHong/SYCON-Bench.",
+    "citations": 49
+  },
+  {
+    "title": "CONSENSAGENT: Towards Efficient and Effective Consensus in Multi-Agent LLM Interactions Through Sycophancy Mitigation",
+    "year": 2025,
+    "authors": "Priya Pitre, Naren Ramakrishnan, Xuan Wang",
+    "url": "https://www.semanticscholar.org/paper/794bf13836bdbeccca94084fb3e96f9c094f6b85",
+    "relevance": 2,
+    "abstract": "Multi-agent large language model (LLM) systems have shown remarkable performance in tasks such as reasoning, planning, and decision-making. However, their applicability is limited by challenges such as high computational costs and robustness issues. In this work, we identify and systematically evaluate a critical yet overlooked challenge: sycophancy, where agents reinforce each other\u2019s responses instead of critically engaging with the debate. This behavior inflates computational costs by requiring additional debate rounds to reach consensus, limiting the efficiency of multi-agent LLM systems. Through experiments on six benchmark reasoning datasets across three models, we analyze the impact of sycophancy and its role in reducing the reliability of multi-agent debate. Motivated by our findings, we propose C ONSENS A GENT , a novel framework that dynamically refines prompts based on agent interactions to mitigate sycophancy. C ONSEN - S A GENT improves accuracy of the debate while maintaining efficiency. It significantly outperforms both single-agent and multi-agent base-lines, achieving state-of-the-art results across all benchmark datasets. Our findings highlight the crucial role of structured prompt optimization in multi-agent setups and establish a foundation for more reliable, efficient multi-agent LLM systems in real-world applications. 1",
+    "citations": 18
+  },
+  {
+    "title": "Flattery in Motion: Benchmarking and Analyzing Sycophancy in Video-LLMs",
+    "year": 2025,
+    "authors": "Wenrui Zhou, Shu Yang, Qingsong Yang, Zikun Guo, Lijie Hu, Di Wang",
+    "url": "https://www.semanticscholar.org/paper/2995bf4d2ab8305e05b886ab3688c91b05033b4b",
+    "relevance": 2,
+    "abstract": "As video large language models (Video-LLMs) become increasingly integrated into real-world applications that demand grounded multimodal reasoning, ensuring their factual consistency and reliability is of critical importance. However, sycophancy, the tendency of these models to align with user input even when it contradicts the visual evidence, undermines their trustworthiness in such contexts. Current sycophancy research has largely overlooked its specific manifestations in the videolanguage domain, resulting in a notable absence of systematic benchmarks and targeted evaluations to understand how Video-LLMs respond under misleading user input. To fill this gap, we propose VISE(Video-LLM Sycophancy Benchmarking and Evaluation), the first benchmark designed to evaluate sycophantic behavior in state-of-the-art Video-LLMs across diverse question formats, prompt biases, and visual reasoning tasks. Specifically, VISEpioneeringly brings linguistic perspectives on sycophancy into the video domain, enabling fine-grained analysis across multiple sycophancy types and interaction patterns. Furthermore, we propose two potential training-free mitigation strategies revealing potential paths for reducing sycophantic bias: (i) enhancing visual grounding through interpretable key-frame selection and (ii) steering model behavior away from sycophancy via targeted, inference-time intervention on its internal neural representations. Our code is available at https://anonymous.4open.science/r/VideoSycophancy-567F.",
+    "citations": 14
+  },
+  {
+    "title": "Reasoning Isn't Enough: Examining Truth-Bias and Sycophancy in LLMs",
+    "year": 2025,
+    "authors": "Emilio Barkett, Olivia Long, Madhavendra Thakur",
+    "url": "https://www.semanticscholar.org/paper/f682ab209c8c5e4dd5b0081e12dd33e0da394e5e",
+    "relevance": 2,
+    "abstract": "Despite their widespread use in fact-checking, moderation, and high-stakes decision-making, large language models (LLMs) remain poorly understood as judges of truth. This study presents the largest evaluation to date of LLMs'veracity detection capabilities and the first analysis of these capabilities in reasoning models. We had eight LLMs make 4,800 veracity judgments across several prompts, comparing reasoning and non-reasoning models. We find that rates of truth-bias, or the likelihood to believe a statement is true, regardless of whether it is actually true, are lower in reasoning models than in non-reasoning models, but still higher than human benchmarks. Most concerning, we identify sycophantic tendencies in several advanced models (o4-mini and GPT-4.1 from OpenAI, R1 from DeepSeek), which displayed an asymmetry in detection accuracy, performing well in truth accuracy but poorly in deception accuracy. This suggests that capability advances alone do not resolve fundamental veracity detection challenges in LLMs.",
+    "citations": 11
+  },
+  {
+    "title": "Sycophancy under Pressure: Evaluating and Mitigating Sycophantic Bias via Adversarial Dialogues in Scientific QA",
+    "year": 2025,
+    "authors": "Kaiwei Zhang, Qi Jia, Zijian Chen, Wei Sun, Xiangyang Zhu, Chunyi Li, Dandan Zhu, Guangtao Zhai",
+    "url": "https://www.semanticscholar.org/paper/9f191856a8bdb0c263461f184c75a5aa39d47427",
+    "relevance": 2,
+    "abstract": "Large language models (LLMs), while increasingly used in domains requiring factual rigor, often display a troubling behavior: sycophancy, the tendency to align with user beliefs regardless of correctness. This tendency is reinforced by preference-based alignment techniques that optimize for user satisfaction but can undermine truthfulness. While relatively benign in casual dialogue, sycophancy poses serious risks in high-stakes settings such as scientific question answering (QA), where model outputs may shape collaborative reasoning, decision-making, and knowledge formation. Despite its importance, this phenomenon remains underexamined in factual QA contexts. We address this gap by introducing a unified evaluation framework to quantify the impact of sycophantic context on model behavior in scientific QA, measuring how much user-imposed social pressure distorts model outputs. The framework incorporates adversarial prompting setups and targeted metrics, such as misleading resistance and sycophancy resistance, that capture a model's ability to maintain factual consistency under misleading cues. Systematic evaluations across open-source and proprietary models reveal pervasive sycophantic tendencies, driven more by alignment strategy than by model size. To mitigate this issue, we propose Pressure-Tune, a lightweight post-training method that fine-tunes models on synthetic adversarial dialogues paired with chain-of-thought rationales. These rationales reject user misinformation while reinforcing factual commitments. Experiments on challenging scientific QA benchmarks show that Pressure-Tune significantly enhances sycophancy resistance without compromising accuracy or responsiveness to valid feedback, offering a practical pathway toward more truthful and principled model behavior.",
+    "citations": 11
+  },
+  {
+    "title": "Large language models outperform humans in identifying neuromyths but show sycophantic behavior in applied contexts.",
+    "year": 2025,
+    "authors": "Eileen Richter, M. Spitzer, Ann Morgan, Luisa Frede, J. Weidlich, Korbinian Moeller",
+    "url": "https://www.semanticscholar.org/paper/da17424f0f045dc2758f37b24f6e4420261e94fd",
+    "relevance": 2,
+    "abstract": "BACKGROUND\nNeuromyths are widespread among educators, which raises concerns about misconceptions regarding the (neural) principles underlying learning in the educator population. With the increasing use of large language models (LLMs) in education, educators are increasingly relying on these for lesson planning and professional development. Therefore, if LLMs correctly identify neuromyths, they may help to dispute related misconceptions.\n\n\nMETHOD\nWe evaluated whether LLMs can correctly identify neuromyths and whether they may hint educators to neuromyths in applied contexts when users ask questions comprising related misconceptions. Additionally, we examined whether explicitly prompting LLMs to base their answer on scientific evidence or to correct unsupported assumptions would decrease errors in identifying neuromyths.\n\n\nRESULTS\nLLMs outperformed humans in identifying neuromyth statements as used in previous studies. However, when presented with applied user-like questions comprising misconceptions, they struggled to highlight or dispute these. Interestingly, explicitly asking LLMs to correct unsupported assumptions increased the likelihood that misconceptions were flagged considerably, while prompting the models to rely on scientific evidence had only little effects.\n\n\nCONCLUSION\nWhile LLMs outperformed humans at identifying isolated neuromyth statements, they struggled to hint users towards the same misconception when they were included in more applied user-like questions-presumably due to LLMs' tendency toward sycophantic responses. This limitation suggests that, despite their potential, LLMs are not yet a reliable safeguard against the spread of neuromyths in educational settings. However, when users explicitly prompt LLMs to correct unsupported assumptions-an approach that may initially seem counterintuitive-this effectively reduced sycophantic responses.",
+    "citations": 11
+  },
+  {
+    "title": "MONICA: Real-Time Monitoring and Calibration of Chain-of-Thought Sycophancy in Large Reasoning Models",
+    "year": 2025,
+    "authors": "Jingyu Hu, Shu Yang, Xilin Gong, Hongming Wang, Weiru Liu, Di Wang",
+    "url": "https://www.semanticscholar.org/paper/1aa0d037d3b9e2b58cb5b02f6d0ec2a09a94e8e3",
+    "relevance": 2,
+    "abstract": "Large Reasoning Models (LRMs) suffer from sycophantic behavior, where models tend to agree with users'incorrect beliefs and follow misinformation rather than maintain independent reasoning. This behavior undermines model reliability and poses societal risks. Mitigating LRM sycophancy requires monitoring how this sycophancy emerges during the reasoning trajectory; however, current methods mainly focus on judging based on final answers and correcting them, without understanding how sycophancy develops during reasoning processes. To address this limitation, we propose MONICA, a novel Monitor-guided Calibration framework that monitors and mitigates sycophancy during model inference at the level of reasoning steps, without requiring the model to finish generating its complete answer. MONICA integrates a sycophantic monitor that provides real-time monitoring of sycophantic drift scores during response generation with a calibrator that dynamically suppresses sycophantic behavior when scores exceed predefined thresholds. Extensive experiments across 12 datasets and 3 LRMs demonstrate that our method effectively reduces sycophantic behavior in both intermediate reasoning steps and final answers, yielding robust performance improvements.",
+    "citations": 8
+  },
+  {
+    "title": "MindEval: Benchmarking Language Models on Multi-turn Mental Health Support",
+    "year": 2025,
+    "authors": "Jos\u00e9 Pombal, Maya D'Eon, Nuno M. Guerreiro, P. Martins, Ant\u00f3nio Farinhas, Ricardo Rei",
+    "url": "https://www.semanticscholar.org/paper/dd8385b232be23e707bd40b5af5627f759118ab5",
+    "relevance": 2,
+    "abstract": "Demand for mental health support through AI chatbots is surging, though current systems present several limitations, like sycophancy or overvalidation, and reinforcement of maladaptive beliefs. A core obstacle to the creation of better systems is the scarcity of benchmarks that capture the complexity of real therapeutic interactions. Most existing benchmarks either only test clinical knowledge through multiple-choice questions or assess single responses in isolation. To bridge this gap, we present MindEval, a framework designed in collaboration with Ph.D-level Licensed Clinical Psychologists for automatically evaluating language models in realistic, multi-turn mental health therapy conversations. Through patient simulation and automatic evaluation with LLMs, our framework balances resistance to gaming with reproducibility via its fully automated, model-agnostic design. We begin by quantitatively validating the realism of our simulated patients against human-generated text and by demonstrating strong correlations between automatic and human expert judgments. Then, we evaluate 12 state-of-the-art LLMs and show that all models struggle, scoring below 4 out of 6, on average, with particular weaknesses in problematic AI-specific patterns of communication. Notably, reasoning capabilities and model scale do not guarantee better performance, and systems deteriorate with longer interactions or when supporting patients with severe symptoms. We release all code, prompts, and human evaluation data.",
+    "citations": 4
+  },
+  {
+    "title": "Do Claude Code and Codex P-Hack? Sycophancy and Statistical Analysis in Large Language Models\u00a0",
+    "year": 2026,
+    "authors": "S. Asher, Janet Malzahn, Jessica Persano, Elliot Paschal, A. Myers, Andrew B. Hall",
+    "url": "https://www.semanticscholar.org/paper/6f59da15d2422de2000aad71013693f4acf88b0a",
+    "relevance": 2,
+    "abstract": "Large language models (LLMs) are increasingly used as research assistants for statistical analysis. A well-documented concern using LLMs is sycophancy, or the tendency to tell users what they want to hear rather than what is true. If sycophancy extends to statistical reasoning, LLM-assisted research could inadvertently automate p-hacking. We evaluate this possibility by asking two AI coding agents-Claude Opus 4.6 and OpenAI Codex (GPT-5.2)-to analyze datasets from four published political science papers with null or near-null results, varying the research framing and the pressure applied for significant findings in a 2 \u00d7 4 factorial design across 640 independent runs. Under standard prompting, both models produce remarkably stable estimates and explicitly refuse direct requests to p-hack, identifying them as scientific misconduct. However, a prompt that reframes specification search as uncertainty reporting bypasses these guardrails, causing both models to engage in systematic specification search. The degree of estimate inflation under this adversarial nudge tracks the analytical flexibility available in each research design: observational studies are more vulnerable than randomized experiments. These findings suggest that, at least in narrow estimation tasks, LLMs themselves are unlikely to bias results toward statistical significance, but safety guardrails are likely unable to restrain researchers intent on p-hacking.",
+    "citations": 3
+  },
+  {
+    "title": "A Rational Analysis of the Effects of Sycophantic AI",
+    "year": 2026,
+    "authors": "R. Batista, Thomas L. Griffiths",
+    "url": "https://www.semanticscholar.org/paper/93ab0c36290238db5d03ef0ffff7b7832cee7305",
+    "relevance": 2,
+    "abstract": "People increasingly use large language models (LLMs) to explore ideas, gather information, and make sense of the world. In these interactions, they encounter agents that are overly agreeable. We argue that this sycophancy poses a unique epistemic risk to how individuals come to see the world: unlike hallucinations that introduce falsehoods, sycophancy distorts reality by returning responses that are biased to reinforce existing beliefs. We provide a rational analysis of this phenomenon, showing that when a Bayesian agent is provided with data that are sampled based on a current hypothesis the agent becomes increasingly confident about that hypothesis but does not make any progress towards the truth. We test this prediction using a modified Wason 2-4-6 rule discovery task where participants (N=557) interacted with AI agents providing different types of feedback. Unmodified LLM behavior suppressed discovery and inflated confidence comparably to explicitly sycophantic prompting. By contrast, unbiased sampling from the true distribution yielded discovery rates five times higher. These results reveal how sycophantic AI distorts belief, manufacturing certainty where there should be doubt.",
+    "citations": 3
+  },
+  {
+    "title": "Benchmarking Gaslighting Negation Attacks Against Reasoning Models",
+    "year": 2025,
+    "authors": "Bin Zhu, Hailong Yin, Jingjing Chen, Yu-Gang Jiang",
+    "url": "https://www.semanticscholar.org/paper/6aeda4ac081bf7eb3b53015a04ebe1947ffc6d70",
+    "relevance": 2,
+    "abstract": "Recent advances in reasoning-centric models promise improved robustness through mechanisms such as chain-of-thought prompting and test-time scaling. However, their ability to withstand gaslighting negation attacks-adversarial prompts that confidently deny correct answers-remains underexplored. In this paper, we conduct a systematic evaluation of three state-of-the-art reasoning models, i.e., OpenAI's o4-mini, Claude-3.7-Sonnet and Gemini-2.5-Flash, across three multimodal benchmarks: MMMU, MathVista, and CharXiv. Our evaluation reveals significant accuracy drops (25-29% on average) following gaslighting negation attacks, indicating that even top-tier reasoning models struggle to preserve correct answers under manipulative user feedback. Built upon the insights of the evaluation and to further probe this vulnerability, we introduce GaslightingBench-R, a new diagnostic benchmark specifically designed to evaluate reasoning models'susceptibility to defend their belief under gaslighting negation attacks. Constructed by filtering and curating 1,025 challenging samples from the existing benchmarks, GaslightingBench-R induces even more dramatic failures, with accuracy drops exceeding 53% on average. Our findings highlight a fundamental gap between step-by-step reasoning and resistance to adversarial manipulation, calling for new robustness strategies that safeguard reasoning models against gaslighting negation attacks.",
+    "citations": 3
+  },
+  {
+    "title": "Overalignment in Frontier LLMs: An Empirical Study of Sycophantic Behaviour in Healthcare",
+    "year": 2026,
+    "authors": "Cl'ement Christophe, Wadood Abdul, Prateek Munjal, Tathagata Raha, Ronnie Rajan, P. Kanithi",
+    "url": "https://www.semanticscholar.org/paper/006817c8542fcf205251d42a60464d8a450dbe33",
+    "relevance": 2,
+    "abstract": "As LLMs are increasingly integrated into clinical workflows, their tendency for sycophancy, prioritizing user agreement over factual accuracy, poses significant risks to patient safety. While existing evaluations often rely on subjective datasets, we introduce a robust framework grounded in medical MCQA with verifiable ground truths. We propose the Adjusted Sycophancy Score, a novel metric that isolates alignment bias by accounting for stochastic model instability, or\"confusability\". Through an extensive scaling analysis of the Qwen-3 and Llama-3 families, we identify a clear scaling trajectory for resilience. Furthermore, we reveal a counter-intuitive vulnerability in reasoning-optimized\"Thinking\"models: while they demonstrate high vanilla accuracy, their internal reasoning traces frequently rationalize incorrect user suggestions under authoritative pressure. Our results across frontier models suggest that benchmark performance is not a proxy for clinical reliability, and that simplified reasoning structures may offer superior robustness against expert-driven sycophancy.",
+    "citations": 2
+  },
+  {
+    "title": "Hearing is Believing? Evaluating and Analyzing Audio Language Model Sycophancy with SYAUDIO",
+    "year": 2026,
+    "authors": "Junchi Yao, Lokranjan Lakshmikanthan, Annie Zhao, Daniel Zhao, Shu Yang, Zikang Ding, Di Wang, Lijie Hu",
+    "url": "https://www.semanticscholar.org/paper/142094a5ef18a076f2e2ecf721dd1cc5159e95de",
+    "relevance": 2,
+    "abstract": "Audio Language Models (ALMs) have recently shown strong capabilities in unified reasoning over speech, sound, and natural language; yet they inherit behavioral issues observed in Large Language Models, including sycophancy--the tendency to agree with user assertions even when they contradict objective evidence. While sycophancy has been extensively studied in text and vision-language models, its manifestation in audio-conditioned reasoning remains largely unexplored, despite the need for ALMs to rely on auditory cues such as acoustic events, speaker characteristics, and speech rate. To address this gap, we introduce SYAUDIO, the first benchmark dedicated to evaluating sycophancy in ALMs, consisting of 4,319 audio questions spanning Audio Perception, Audio Reasoning, Audio Math, and Audio Ethics. Built upon established audio benchmarks and augmented with TTS-generated arithmetic and moral reasoning tasks, SYAUDIO enables systematic evaluation across multiple domains and sycophancy types with carefully verified data quality. Furthermore, we analyze audio-specific sycophancy under realistic conditions involving noise and rate, and demonstrate that supervised fine-tuning with chain-of-thought data is an effective mitigation strategy for reducing sycophantic behavior in ALMs.",
+    "citations": 2
+  },
+  {
+    "title": "PENDULUM: A Benchmark for Assessing Sycophancy in Multimodal Large Language Models",
+    "year": 2025,
+    "authors": "A. Rahman, Saeed Anwar, Muhammad Usman, Irfan Ahmad, Ajmal Mian",
+    "url": "https://www.semanticscholar.org/paper/e8ea0333cae8a6e0b42ccbce654f6093ecbeab31",
+    "relevance": 2,
+    "abstract": "Sycophancy, an excessive tendency of AI models to agree with user input at the expense of factual accuracy or in contradiction of visual evidence, poses a critical and underexplored challenge for multimodal large language models (MLLMs). While prior studies have examined this behavior in text-only settings of large language models, existing research on visual or multimodal counterparts remains limited in scope and depth of analysis. To address this gap, we introduce a comprehensive evaluation benchmark, \\textit{PENDULUM}, comprising approximately 2,000 human-curated Visual Question Answering pairs specifically designed to elicit sycophantic responses. The benchmark spans six distinct image domains of varying complexity, enabling a systematic investigation of how image type and inherent challenges influence sycophantic tendencies. Through extensive evaluation of state-of-the-art MLLMs. we observe substantial variability in model robustness and a pronounced susceptibility to sycophantic and hallucinatory behavior. Furthermore, we propose novel metrics to quantify sycophancy in visual reasoning, offering deeper insights into its manifestations across different multimodal contexts. Our findings highlight the urgent need for developing sycophancy-resilient architectures and training strategies to enhance factual consistency and reliability in future MLLMs. Our proposed dataset with MLLMs response are available at https://github.com/ashikiut/pendulum/.",
+    "citations": 2
+  },
+  {
+    "title": "Behavioral Fingerprinting of Large Language Models",
+    "year": 2025,
+    "authors": "Zehua Pei, Hui-Ling Zhen, Ying Zhang, Zhiyuan Yang, Xing Li, Xianzhi Yu, Mingxuan Yuan, Bei Yu",
+    "url": "https://www.semanticscholar.org/paper/293268816002f86827f0d4a7c10d88ede45048ee",
+    "relevance": 2,
+    "abstract": "Current benchmarks for Large Language Models (LLMs) primarily focus on performance metrics, often failing to capture the nuanced behavioral characteristics that differentiate them. This paper introduces a novel ``Behavioral Fingerprinting''framework designed to move beyond traditional evaluation by creating a multi-faceted profile of a model's intrinsic cognitive and interactive styles. Using a curated \\textit{Diagnostic Prompt Suite} and an innovative, automated evaluation pipeline where a powerful LLM acts as an impartial judge, we analyze eighteen models across capability tiers. Our results reveal a critical divergence in the LLM landscape: while core capabilities like abstract and causal reasoning are converging among top models, alignment-related behaviors such as sycophancy and semantic robustness vary dramatically. We further document a cross-model default persona clustering (ISTJ/ESTJ) that likely reflects common alignment incentives. Taken together, this suggests that a model's interactive nature is not an emergent property of its scale or reasoning power, but a direct consequence of specific, and highly variable, developer alignment strategies. Our framework provides a reproducible and scalable methodology for uncovering these deep behavioral differences. Project: https://github.com/JarvisPei/Behavioral-Fingerprinting",
+    "citations": 2
+  },
+  {
+    "title": "But what is your honest answer? Aiding LLM-judges with honest alternatives using steering vectors",
+    "year": 2025,
+    "authors": "Leon Eshuijs, Archie Chaudhury, Alan McBeth, Ethan Nguyen",
+    "url": "https://www.semanticscholar.org/paper/20e1df78dd5f9c01931a054bb0fb29edd3b1d25d",
+    "relevance": 2,
+    "abstract": "LLM-as-a-judge is widely used as a scalable substitute for human evaluation, yet current approaches rely on black-box access and struggle to detect subtle dishonesty, such as sycophancy and manipulation. We introduce Judge Using Safety-Steered Alternatives (JUSSA), a framework that leverages a model's internal representations to optimize an honesty-promoting steering vector from a single training example, generating contrastive alternatives that give judges a reference point for detecting dishonesty. We test JUSSA on a novel manipulation benchmark with human-validated response pairs at varying dishonesty levels, finding AUROC improvements across both GPT-4.1 (0.893 $\\to$ 0.946) and Claude Haiku (0.859 $\\to$ 0.929) judges, though performance degrades when task complexity is mismatched to judge capability, suggesting contrastive evaluation helps most when the task is challenging but within the judge's reach. Layer-wise analysis further shows that steering is most effective in middle layers, where model representations begin to diverge between honest and dishonest prompt processing. Our work demonstrates that steering vectors can serve as tools for evaluation rather than for improving model outputs at inference, opening a new direction for thorough white-box auditing.",
+    "citations": 2
+  },
+  {
+    "title": "Benchmarking and Mitigating Sycophancy in Medical Vision Language Models",
+    "year": 2025,
+    "authors": "Zikun Guo, Xinyue Xu, Pei Xiang, Shu Yang, Xin Han, Di Wang, Lijie Hu",
+    "url": "https://www.semanticscholar.org/paper/082c1c764e1c5eacee1eb883769032cd02c64c6b",
+    "relevance": 2,
+    "abstract": "Visual language models (VLMs) have the potential to transform medical workflows. However, the deployment is limited by sycophancy. Despite this serious threat to patient safety, a systematic benchmark remains lacking. This paper addresses this gap by introducing a Medical benchmark that applies multiple templates to VLMs in a hierarchical medical visual question answering task. We find that current VLMs are highly susceptible to visual cues, with failure rates showing a correlation to model size or overall accuracy. we discover that perceived authority and user mimicry are powerful triggers, suggesting a bias mechanism independent of visual data. To overcome this, we propose a Visual Information Purification for Evidence based Responses (VIPER) strategy that proactively filters out non-evidence-based social cues, thereby reinforcing evidence based reasoning. VIPER reduces sycophancy while maintaining interpretability and consistently outperforms baseline methods, laying the necessary foundation for the robust and secure integration of VLMs.",
+    "citations": 2
+  },
+  {
+    "title": "IslamicLegalBench: Evaluating LLMs Knowledge and Reasoning of Islamic Law Across 1,200 Years of Islamic Pluralist Legal Traditions",
+    "year": 2026,
+    "authors": "Ezieddin Elmahjub, Junaid Qadir, Abdullah Mushtaq, M. Naeem, Ibrahim Ghaznavi, Waleed Iqbal",
+    "url": "https://www.semanticscholar.org/paper/7577701e4df52228914c21e775a46c47f36371de",
+    "relevance": 2,
+    "abstract": "As millions of Muslims turn to LLMs like GPT, Claude, and DeepSeek for religious guidance, a critical question arises: Can these AI systems reliably reason about Islamic law? We introduce IslamicLegalBench, the first benchmark evaluating LLMs across seven schools of Islamic jurisprudence, with 718 instances covering 13 tasks of varying complexity. Evaluation of nine state-of-the-art models reveals major limitations: the best model achieves only 68% correctness with 21% hallucination, while several models fall below 35% correctness and exceed 55% hallucination. Few-shot prompting provides minimal gains, improving only 2 of 9 models by>1%. Moderate-complexity tasks requiring exact knowledge show the highest errors, whereas high-complexity tasks display apparent competence through semantic reasoning. False premise detection indicates risky sycophancy, with 6 of 9 models accepting misleading assumptions at rates above 40%. These results highlight that prompt-based methods cannot compensate for missing foundational knowledge. IslamicLegalBench offers the first systematic framework to evaluate Islamic legal reasoning in AI, revealing critical gaps in tools increasingly relied on for spiritual guidance.",
+    "citations": 1
+  },
+  {
+    "title": "The Silicon Mirror: Dynamic Behavioral Gating for Anti-Sycophancy in LLM Agents",
+    "year": 2026,
+    "authors": "Harsh Shah",
+    "url": "https://www.semanticscholar.org/paper/e9f1f53e2d0dd032a6d52154c248f304ee88bb9d",
+    "relevance": 2,
+    "abstract": "Large Language Models (LLMs) increasingly prioritize user validation over epistemic accuracy - a phenomenon known as sycophancy. We present The Silicon Mirror, an orchestration framework that dynamically detects user persuasion tactics and adjusts AI behavior to maintain factual integrity. Our architecture introduces three components: (1) a Behavioral Access Control (BAC) system that restricts context layer access based on real-time sycophancy risk scores, (2) a Trait Classifier that identifies persuasion tactics across multi-turn dialogues, and (3) a Generator-Critic loop where an auditor vetoes sycophantic drafts and triggers rewrites with\"Necessary Friction.\"In a live evaluation across all 437 TruthfulQA adversarial scenarios, Claude Sonnet 4 exhibits 9.6% baseline sycophancy, reduced to 1.4% by the Silicon Mirror - an 85.7% relative reduction (p<10^-6, OR = 7.64, Fisher's exact test). Cross-model evaluation on Gemini 2.5 Flash reveals a 46.0% baseline reduced to 14.2% (p<10^-10, OR = 5.15). We characterize the validation-before-correction pattern as a distinct failure mode of RLHF-trained models.",
+    "citations": 1
+  },
+  {
+    "title": "Human-like Social Compliance in Large Language Models: Unifying Sycophancy and Conformity through Signal Competition Dynamics",
+    "year": 2025,
+    "authors": "Long Zhang, Wei-neng Chen",
+    "url": "https://www.semanticscholar.org/paper/0b569f5fd706326c32f5356f10463d1115f2ebdc",
+    "relevance": 2,
+    "abstract": "The increasing integration of Large Language Models (LLMs) into decision-making frameworks has exposed significant vulnerabilities to social compliance, specifically sycophancy and conformity. However, a critical research gap exists regarding the fundamental mechanisms that enable external social cues to systematically override a model's internal parametric knowledge. This study introduces the Signal Competition Mechanism, a unified framework validated by assessing behavioral correlations across 15 LLMs and performing latent-space probing on three representative open-source models. The analysis demonstrates that sycophancy and conformity originate from a convergent geometric manifold, hereafter termed the compliance subspace, which is characterized by high directional similarity in internal representations. Furthermore, the transition to compliance is shown to be a deterministic process governed by a linear boundary, where the Social Emotional Signal effectively suppresses the Information Calibration Signal. Crucially, we identify a\"Transparency-Truth Gap,\"revealing that while internal confidence provides an inertial barrier, it remains permeable and insufficient to guarantee immunity against intense social pressure. By formalizing the Integrated Epistemic Alignment Framework, this research provides a blueprint for transitioning from instructional adherence to robust epistemic integrity.",
+    "citations": 1
+  },
+  {
+    "title": "Beacon: Single-Turn Diagnosis and Mitigation of Latent Sycophancy in Large Language Models",
+    "year": 2025,
+    "authors": "Sanskar Pandey, Ruhaan Chopra, Angkul Puniya, Sohom Pal",
+    "url": "https://www.semanticscholar.org/paper/c3011077e4bf7f56a15c558f356e0bfed7d8be82",
+    "relevance": 2,
+    "abstract": "Large language models internalize a structural trade-off between truthfulness and obsequious flattery, emerging from reward optimization that conflates helpfulness with polite submission. This latent bias, known as sycophancy, manifests as a preference for user agreement over principled reasoning. We introduce Beacon, a single-turn forced-choice benchmark that isolates this bias independent of conversational context, enabling precise measurement of the tension between factual accuracy and submissive bias. Evaluations across twelve state-of-the-art models reveal that sycophancy decomposes into stable linguistic and affective sub-biases, each scaling with model capacity. We further propose prompt-level and activation-level interventions that modulate these biases in opposing directions, exposing the internal geometry of alignment as a dynamic manifold between truthfulness and socially compliant judgment. Beacon reframes sycophancy as a measurable form of normative misgeneralization, providing a reproducible foundation for studying and mitigating alignment drift in large-scale generative systems.",
+    "citations": 1
+  },
+  {
+    "title": "V-FAT: Benchmarking Visual Fidelity Against Text-bias",
+    "year": 2026,
+    "authors": "Ziteng Wang, Yujie He, Guanliang Li, Siqi Yang, Jiaqi Xiong, Songxiang Liu",
+    "url": "https://www.semanticscholar.org/paper/1fb112d752bfe8e1b70b4e7885b6b1de45add503",
+    "relevance": 2,
+    "abstract": "Recent advancements in Multimodal Large Language Models (MLLMs) have demonstrated impressive performance on standard visual reasoning benchmarks. However, there is growing concern that these models rely excessively on linguistic shortcuts rather than genuine visual grounding, a phenomenon we term Text Bias. In this paper, we investigate the fundamental tension between visual perception and linguistic priors. We decouple the sources of this bias into two dimensions: Internal Corpus Bias, stemming from statistical correlations in pretraining, and External Instruction Bias, arising from the alignment-induced tendency toward sycophancy. To quantify this effect, we introduce V-FAT (Visual Fidelity Against Text-bias), a diagnostic benchmark comprising 4,026 VQA instances across six semantic domains. V-FAT employs a Three-Level Evaluation Framework that systematically increases the conflict between visual evidence and textual information: (L1) internal bias from atypical images, (L2) external bias from misleading instructions, and (L3) synergistic bias where both coincide. We introduce the Visual Robustness Score (VRS), a metric designed to penalize\"lucky\"linguistic guesses and reward true visual fidelity. Our evaluation of 12 frontier MLLMs reveals that while models excel in existing benchmarks, they experience significant visual collapse under high linguistic dominance.",
+    "citations": 1
+  },
+  {
+    "title": "To Agree or To Be Right? The Grounding-Sycophancy Tradeoff in Medical Vision-Language Models",
+    "year": 2026,
+    "authors": "O. R. R. Aranya, Kevin Desai",
+    "url": "https://www.semanticscholar.org/paper/d4d8afd9f8812b42850535208e0ab41b745d24aa",
+    "relevance": 2,
+    "abstract": "Vision-language models (VLMs) adapted to the medical domain have shown strong performance on visual question answering benchmarks, yet their robustness against two critical failure modes, hallucination and sycophancy, remains poorly understood, particularly in combination. We evaluate six VLMs (three general-purpose, three medical-specialist) on three medical VQA datasets and uncover a grounding-sycophancy tradeoff: models with the lowest hallucination propensity are the most sycophantic, while the most pressure-resistant model hallucinates more than all medical-specialist models. To characterize this tradeoff, we propose three metrics: L-VASE, a logit-space reformulation of VASE that avoids its double-normalization; CCS, a confidence-calibrated sycophancy score that penalizes high-confidence capitulation; and Clinical Safety Index (CSI), a unified safety index that combines grounding, autonomy, and calibration via a geometric mean. Across 1,151 test cases, no model achieves a CSI above 0.35, indicating that none of the evaluated 7-8B parameter VLMs is simultaneously well-grounded and robust to social pressure. Our findings suggest that joint evaluation of both properties is necessary before these models can be considered for clinical use. Code is available at https://github.com/UTSA-VIRLab/AgreeOrRight",
+    "citations": 1
+  },
+  {
+    "title": "Stress Tests REVEAL Fragile Temporal and Visual Grounding in Video-Language Models",
+    "year": 2026,
+    "authors": "V. SethuramanT., Savya Khosla, Aditi Tiwari, Vidya Ganesh, Rakshana Jayaprakash, Aditya Jain, Vignesh Srinivasakumar, Onkar Susladkar, Srinidhi Sunkara, Aditya Shanmugham, Rakesh Vaideeswaran, Abbaas Alif Mohamed Nishar, Simon Jenni, Derek Hoiem",
+    "url": "https://www.semanticscholar.org/paper/698fa78d243392384d9c58dc99738ab4174fb294",
+    "relevance": 2,
+    "abstract": "This work investigates a fundamental question: Do Video-Language Models (VidLMs) robustly account for video content, temporal sequence, and motion? Our investigation shows that, surprisingly, they often do not. We introduce REVEAL{}, a diagnostic benchmark that probes fundamental weaknesses of contemporary VidLMs through five controlled stress tests; assessing temporal expectation bias, reliance on language-only shortcuts, video sycophancy, camera motion sensitivity, and robustness to spatiotemporal occlusion. We test leading open- and closed-source VidLMs and find that these models confidently describe reversed scenes as forward, answer questions while neglecting video content, agree with false claims, struggle with basic camera motion, and fail to aggregate temporal information amidst simple spatiotemporal masking. Humans, on the other hand, succeed at these tasks with ease. Alongside our benchmark, we provide a data pipeline that automatically generates diagnostic examples for our stress tests, enabling broader and more scalable evaluation. We will release our benchmark and code to support future research.",
+    "citations": 1
+  },
+  {
+    "title": "Acting Flatterers via LLMs Sycophancy: Combating Clickbait with LLMs Opposing-Stance Reasoning",
+    "year": 2026,
+    "authors": "Chaowei Zhang, Xiansheng Luo, Zewei Zhang, Yi Zhu, Jipeng Qiang, Longwei Wang",
+    "url": "https://www.semanticscholar.org/paper/e869b84cea9c22d3f9237c3086baa2461245803b",
+    "relevance": 2,
+    "abstract": "The widespread proliferation of online content has intensified concerns about clickbait, deceptive or exaggerated headlines designed to attract attention. While Large Language Models (LLMs) offer a promising avenue for addressing this issue, their effectiveness is often hindered by Sycophancy, a tendency to produce reasoning that matches users' beliefs over truthful ones, which deviates from instruction-following principles. Rather than treating sycophancy as a flaw to be eliminated, this work proposes a novel approach that initially harnesses this behavior to generate contrastive reasoning from opposing perspectives. Specifically, we design a Self-renewal Opposing-stance Reasoning Generation (SORG) framework that prompts LLMs to produce high-quality ''agree'' and ''disagree'' reasoning pairs for a given news title without requiring ground-truth labels. To utilize the generated reasoning, we develop a local Opposing Reasoning-based Clickbait Detection (ORCD) model that integrates three BERT encoders to represent the title and its associated reasoning. The model leverages contrastive learning, guided by soft labels derived from LLM-generated credibility scores, to enhance detection robustness. Experimental evaluations on three benchmark datasets demonstrate that our method consistently outperforms LLM prompting, fine-tuned smaller language models, and state-of-the-art clickbait detection baselines. Our code is available in https://github.com/126541/ORCD.",
+    "citations": 0
+  },
+  {
+    "title": "Good Arguments Against the People Pleasers: How Reasoning Mitigates (Yet Masks) LLM Sycophancy",
+    "year": 2026,
+    "authors": "Zhaoxin Feng, Zheng Chen, Jianfei Ma, Yip Tin Po, Emmanuele Chersoni, Bo Li",
+    "url": "https://www.semanticscholar.org/paper/75a7daf906d33417127d89f42159bc27237965e4",
+    "relevance": 2,
+    "abstract": "Alignment techniques often inadvertently induce sycophancy in LLMs. While prior studies studied this behaviour in direct-answer settings, the role of Chain-of-Thought (CoT) reasoning remains under-explored: does it serve as a logical constraint that mitigates sycophancy, or a tool for post-hoc rationalization that masks it? We evaluate a range of models across objective and subjective tasks to investigate the issue. Results show that reasoning generally reduces sycophancy in final decisions but also masks sycophancy in some samples, where models construct deceptive justifications through logical inconsistencies, calculation errors, and one-sided arguments etc. Furthermore, LLMs are more prone to sycophancy in subjective tasks and under authority-bias. Our mechanistic analysis on three open-source models reveals that the tendency of sycophancy is dynamic during the reasoning process rather than being pre-determined at the input stage.",
+    "citations": 0
+  },
+  {
+    "title": "When Helpfulness Becomes Sycophancy: Sycophancy is a Boundary Failure Between Social Alignment and Epistemic Integrity in Large Language Models",
+    "year": 2026,
+    "authors": "Jiecheng Li, Catherine Barry, Rishika Randev, Janet Chen, Ella Jorgensen, Brinnae Bent",
+    "url": "https://www.semanticscholar.org/paper/c583f1ece73ae733344ef1481da8495555a30acd",
+    "relevance": 2,
+    "abstract": "This position paper argues that sycophancy in LLMs is a boundary failure between social alignment and epistemic integrity. Existing work often operationalizes sycophancy through external behavior such as agreement with incorrect user beliefs, position reversals, or deviation from an objective standard of correctness. These formulations capture only overt forms of the phenomenon and leave subtler boundary failures involving epistemic integrity and social alignment underspecified. We argue that sycophancy should not be understood as agreement alone, but as alignment behavior that displaces independent epistemic judgment. To clarify this boundary, we propose a three-condition framework for sycophancy. First, the user expresses a cue in the form of a belief, preference, or self-concept. Second, the model shifts toward that cue through alignment behavior. Third, this shift compromises epistemic accuracy, independent reasoning, or appropriate correction. We also introduce a taxonomy for classifying sycophancy, consisting of alignment targets, mechanisms, and severity. The paper concludes by discussing implications for alignment evaluation and argues for boundary-aware assessment, structured rubrics, and mitigation strategies, while situating these proposals alongside alternative views of sycophancy.",
+    "citations": 0
+  },
+  {
+    "title": "Spatiotemporal Sycophancy: Negation-Based Gaslighting in Video Large Language Models",
+    "year": 2026,
+    "authors": "Ziyao Tang, Pengkun Jiao, Bin Zhu, Huiyan Qi, Jingjing Chen, Yu-Gang Jiang",
+    "url": "https://www.semanticscholar.org/paper/cd000254c6e00f9baae0b2c6dfe7238330c96042",
+    "relevance": 2,
+    "abstract": "Video Large Language Models (Vid-LLMs) have demonstrated remarkable performance in video understanding tasks, yet their robustness under conversational interaction remains largely underexplored. In this paper, we identify spatiotemporal sycophancy, a failure mode in which Vid-LLMs retract initially correct, visually grounded judgments and conform to misleading user feedback under negation-based gaslighting. Rather than merely changing their answers, the models often fabricate unsupported temporal or spatial explanations to justify incorrect revisions. To systematically investigate this phenomenon, we propose a negation-based gaslighting evaluation framework and introduce GasVideo-1000, a curated benchmark designed to probe spatiotemporal sycophancy with clear visual grounding and temporal reasoning requirements. We evaluate a broad range of state-of-the-art open-source and proprietary Vid-LLMs across diverse video understanding tasks. Extensive experiments reveal that vulnerability to negation-based gaslighting is pervasive and severe, even among models with strong baseline performance. While prompt-level grounding constraints can partially mitigate this behavior, they do not reliably prevent hallucinated justifications or belief reversal. Our results indicate that current Vid-LLMs lack robust mechanisms for maintaining grounded spatiotemporal beliefs under adversarial conversational feedback.",
+    "citations": 0
+  },
+  {
+    "title": "Beyond Social Pressure: Benchmarking Epistemic Attack in Large Language Models",
+    "year": 2026,
+    "authors": "Steven Au, Sujit Noronha",
+    "url": "https://www.semanticscholar.org/paper/5fd008ba3b79f39a6294de80195fb4746188bc81",
+    "relevance": 2,
+    "abstract": "Large language models (LLMs) can shift their answers under pressure in ways that reflect accommodation rather than reasoning. Prior work on sycophancy has focused mainly on disagreement, flattery, and preference alignment, leaving a broader set of epistemic failures less explored. We introduce \\textbf{PPT-Bench}, a diagnostic benchmark for evaluating \\textit{epistemic attack}, where prompts challenge the legitimacy of knowledge, values, or identity rather than simply opposing a previous answer. PPT-Bench is organized around the Philosophical Pressure Taxonomy (PPT), which defines four types of philosophical pressure: Epistemic Destabilization, Value Nullification, Authority Inversion, and Identity Dissolution. Each item is tested at three layers: a baseline prompt (L0), a single-turn pressure condition (L1), and a multi-turn Socratic escalation (L2). This allows us to measure epistemic inconsistency between L0 and L1, and conversational capitulation in L2. Across five models, these pressure types produce statistically separable inconsistency patterns, suggesting that epistemic attack exposes weaknesses not captured by standard social-pressure benchmarks. Mitigation results are strongly type- and model-dependent: prompt-level anchoring and persona-stability prompts perform best in API settings, while Leading Query Contrastive Decoding is the most reliable intervention for open models.",
+    "citations": 0
+  },
+  {
+    "title": "Mitigating Sycophancy and Hallucination in Large Language Models: The LOGOS Case Study in the Era of Reasoning Models (DeepSeek-R1, Gemini 3.0, ChatGPT-5)",
+    "year": 2026,
+    "authors": "Athanasios Davalas, Anna Angelaki",
+    "url": "https://www.semanticscholar.org/paper/045a4d5d77101a8cb7cf2fb5f7c2161707419a11",
+    "relevance": 2,
+    "abstract": "Reliability in large language models (LLMs) is constrained along two orthogonal axes: sycophancy\u2014a social-alignment failure where the model tends to agree with user pressure\u2014and hallucination (confabulation)\u2014a world-alignment failure producing confident but unsupported content (Fanous et al., 2025; Sharma et al., 2023; Ji et al., 2022; Kalai et al., 2025). Building on this distinction, we introduce LOGOS, a domain-bounded Constitutional RAG system for Orthodox theology with explicit anti-sycophancy rules and strict scope boundaries. Prior to human comparison, LOGOS underwent a Phase1 theological audit: a committee of the Holy Metropolis of Nea Ionia posed 200 domain questions, finding all responses doctrinally sound. We then conducted a Phase2 human evaluation with N = 52 AI students (valid responses N=51\u2013 52 per prompt), using five structured prompts plus one freeform redteaming task.",
+    "citations": 0
+  },
+  {
+    "title": "Personalization Increases Affective Alignment but Has Role-Dependent Effects on Epistemic Independence in LLMs",
+    "year": 2026,
+    "authors": "Sean W. Kelley, Christoph Riedl",
+    "url": "https://www.semanticscholar.org/paper/c7af894a86375750c0975d1642a74177da9343a5",
+    "relevance": 2,
+    "abstract": "Large Language Models (LLMs) are prone to sycophantic behavior, uncritically conforming to user beliefs. As models increasingly condition responses on user-specific context (personality traits, preferences, conversation history), they gain information to tailor agreement more effectively. Understanding how personalization modulates sycophancy is critical, yet systematic evaluation across models and contexts remains limited. We present a rigorous evaluation of personalization's impact on LLM sycophancy across nine frontier models and five benchmark datasets spanning advice, moral judgment, and debate contexts. We find that personalization generally increases affective alignment (emotional validation, hedging/deference), but affects epistemic alignment (belief adoption, position stability, resistance to influence) with context-dependent role modulation. When the LLM's role is to give advice, personalization strengthens epistemic independence (models challenge user presuppositions). When its role is that of a social peer, personalization decreases epistemic independence. In this role, extensively personalized user challenges causing LLMs to abandon their position at significantly higher rates. Robustness tests confirm that the effects are driven by personalized conditioning, not by additional input tokens per se or demographic information alone. Our work provides measurement frameworks for evaluating personalized AI systems, demonstrates the necessity of role-sensitive evaluation, and establishes a novel benchmark to assess goal alignment.",
+    "citations": 0
+  },
+  {
+    "title": "The Geometric Price of Discrete Logic: Context-driven Manifold Dynamics of Number Representations",
+    "year": 2026,
+    "authors": "Long Zhang, Dai-jun Lin, Wei-neng Chen",
+    "url": "https://www.semanticscholar.org/paper/ef4bbf46d0d6019801717f385ef0e8897dbb193f",
+    "relevance": 2,
+    "abstract": "Large language models (LLMs) generalize smoothly across continuous semantic spaces, yet strict logical reasoning demands the formation of discrete decision boundaries. Prevailing theories relying on linear isometric projections fail to resolve this fundamental tension. In this work, we argue that task context operates as a non-isometric dynamical operator that enforces a necessary\"topological distortion.\"By applying Gram-Schmidt decomposition to residual-stream activations , we reveal a dual-modulation mechanism driving this process: a class-agnostic topological preservation that anchors global structure to prevent semantic collapse, and a specific algebraic divergence that directionally tears apart cross-class concepts to forge logical boundaries. We validate this geometric evolution across a gradient of tasks, from simple mapping to complex primality testing. Crucially, targeted specific vector ablation establishes a strict causal binding between this topology and model function: algebraically erasing the divergence component collapses parity classification accuracy from 100% to chance levels (38.57%). Furthermore, we uncover a three-phase layer-wise geometric dynamic and demonstrate that under social pressure prompts, models fail to generate sufficient divergence. This results in a\"manifold entanglement\"that geometrically explains sycophancy and hallucination. Ultimately, our findings revise the linear-isometric presumption, demonstrating that the emergence of discrete logic in LLMs is purchased at an irreducible cost of topological deformation.",
+    "citations": 0
+  },
+  {
+    "title": "How Large Language Models Balance Internal Knowledge with User and Document Assertions",
+    "year": 2026,
+    "authors": "Shuo Li, Haoxin Li, Wen-Yi Chu, Yingtao Fang",
+    "url": "https://www.semanticscholar.org/paper/1d1e9796cf93063d60a92e083ff4372e3ac27d28",
+    "relevance": 2,
+    "abstract": "Large language models (LLMs) often need to balance their internal parametric knowledge with external information, such as user beliefs and content from retrieved documents, in real-world scenarios like RAG or chat-based systems. A model's ability to reliably process these sources is key to system safety. Previous studies on knowledge conflict and sycophancy are limited to a binary conflict paradigm, primarily exploring conflicts between parametric knowledge and either a document or a user, but ignoring the interactive environment where all three sources exist simultaneously. To fill this gap, we propose a three-source interaction framework and systematically evaluate 27 LLMs from 3 families on 2 datasets. Our findings reveal general patterns: most models rely more on document assertions than user assertions, and this preference is reinforced by post-training. Furthermore, our behavioral analysis shows that most models are impressionable, unable to effectively discriminate between helpful and harmful external information. To address this, we demonstrate that fine-tuning on diverse source interaction data can significantly increase a model's discrimination abilities. In short, our work paves the way for developing trustworthy LLMs that can effectively and reliably integrate multiple sources of information. Code is available at https://github.com/shuowl/llm-source-balancing.",
+    "citations": 0
+  },
+  {
+    "title": "AssertBench: A Benchmark for Evaluating Self-Assertion in Large Language Models",
+    "year": 2025,
+    "authors": "Jaeho Lee, Atharv Chowdhary",
+    "url": "https://www.semanticscholar.org/paper/0f32d4bb76f6f198d604daa44b43be9d8131f665",
+    "relevance": 2,
+    "abstract": "Recent benchmarks have probed factual consistency and rhetorical robustness in Large Language Models (LLMs). However, a knowledge gap exists regarding how directional framing of factually true statements influences model agreement, a common scenario for LLM users. AssertBench addresses this by sampling evidence-supported facts from FEVEROUS, a fact verification dataset. For each (evidence-backed) fact, we construct two framing prompts: one where the user claims the statement is factually correct, and another where the user claims it is incorrect. We then record the model's agreement and reasoning. The desired outcome is that the model asserts itself, maintaining consistent truth evaluation across both framings, rather than switching its evaluation to agree with the user. AssertBench isolates framing-induced variability from the model's underlying factual knowledge by stratifying results based on the model's accuracy on the same claims when presented neutrally. In doing so, this benchmark aims to measure an LLM's ability to\"stick to its guns\"when presented with contradictory user assertions about the same fact. The complete source code is available at https://github.com/achowd32/assert-bench.",
+    "citations": 0
+  },
+  {
+    "title": "Evaluating Evidence Grounding Under User Pressure in Instruction-Tuned Language Models",
+    "year": 2026,
+    "authors": "S. Koneru, E. Joe, C. Kirchhoff, Jian Wu, Sarah M. Rajtmajer",
+    "url": "https://www.semanticscholar.org/paper/1738820de7d44c3e605b459c4067e6450fb5bd8f",
+    "relevance": 2,
+    "abstract": "In contested domains, instruction-tuned language models must balance user-alignment pressures against faithfulness to the in-context evidence. To evaluate this tension, we introduce a controlled epistemic-conflict framework grounded in the U.S. National Climate Assessment. We conduct fine-grained ablations over evidence composition and uncertainty cues across 19 instruction-tuned models spanning 0.27B to 32B parameters. Across neutral prompts, richer evidence generally improves evidence-consistent accuracy and ordinal scoring performance. Under user pressure, however, evidence does not reliably prevent user-aligned reversals in this controlled fixed-evidence setting. We report three primary failure modes. First, we identify a negative partial-evidence interaction, where adding epistemic nuance, specifically research gaps, is associated with increased susceptibility to sycophancy in families like Llama-3 and Gemma-3. Second, robustness scales non-monotonically: within some families, certain low-to-mid scale models are especially sensitive to adversarial user pressure. Third, models differ in distributional concentration under conflict: some instruction-tuned models maintain sharply peaked ordinal distributions under pressure, while others are substantially more dispersed; in scale-matched Qwen comparisons, reasoning-distilled variants (DeepSeek-R1-Qwen) exhibit consistently higher dispersion than their instruction-tuned counterparts. These findings suggest that, in a controlled fixed-evidence setting, providing richer in-context evidence alone offers no guarantee against user pressure without explicit training for epistemic integrity.",
+    "citations": 0
+  },
+  {
+    "title": "SWAY: A Counterfactual Computational Linguistic Approach to Measuring and Mitigating Sycophancy",
+    "year": 2026,
+    "authors": "Joy Bhalla, Kristina Gligori'c",
+    "url": "https://www.semanticscholar.org/paper/5816053fbda13e7d56ecce4ba14fd1b3df7ee3fd",
+    "relevance": 2,
+    "abstract": "Large language models exhibit sycophancy: the tendency to shift outputs toward user-expressed stances, regardless of correctness or consistency. While prior work has studied this issue and its impacts, rigorous computational linguistic metrics are needed to identify when models are being sycophantic. Here, we introduce SWAY, an unsupervised computational linguistic measure of sycophancy. We develop a counterfactual prompting mechanism to identify how much a model's agreement shifts under positive versus negative linguistic pressure, isolating framing effects from content. Applying this metric to benchmark 6 models, we find that sycophancy increases with epistemic commitment. Leveraging our metric, we introduce a counterfactual mitigation strategy teaching models to consider what the answer would be if opposite assumptions were suggested. While baseline mitigation instructing to be explicitly anti-sycophantic yields moderate reductions, and can backfire, our counterfactual CoT mitigation drives sycophancy to near zero across models, commitment levels, and clause types, while not suppressing responsiveness to genuine evidence. Overall, we contribute a metric for benchmarking sycophancy and a mitigation informed by it.",
+    "citations": 0
+  },
+  {
+    "title": "Pressure, What Pressure? Sycophancy Disentanglement in Language Models via Reward Decomposition",
+    "year": 2026,
+    "authors": "Muhammad Ahmed Mohsin, Ahsan Bilal, Muhammad Umer, Emily B. Fox",
+    "url": "https://www.semanticscholar.org/paper/73b34bd07e1709fe244ecd158ade57fc8640f17c",
+    "relevance": 2,
+    "abstract": "Large language models exhibit sycophancy, the tendency to shift their stated positions toward perceived user preferences or authority cues regardless of evidence. Standard alignment methods fail to correct this because scalar reward models conflate two distinct failure modes into a single signal: pressure capitulation, where the model changes a correct answer under social pressure, and evidence blindness, where the model ignores the provided context entirely. We operationalise sycophancy through formal definitions of pressure independence and evidence responsiveness, serving as a working framework for disentangled training rather than a definitive characterisation of the phenomenon. We propose the first approach to sycophancy reduction via reward decomposition, introducing a multi-component Group Relative Policy Optimisation (GRPO) reward that decomposes the training signal into five terms: pressure resistance, context fidelity, position consistency, agreement suppression, and factual correctness. We train using a contrastive dataset pairing pressure-free baselines with pressured variants across three authority levels and two opposing evidence contexts. Across five base models, our two-phase pipeline consistently reduces sycophancy on all metric axes, with ablations confirming that each reward term governs an independent behavioural dimension. The learned resistance to pressure generalises beyond our training methodology and prompt structure, reducing answer-priming sycophancy by up to 17 points on SycophancyEval despite the absence of such pressure forms during training.",
+    "citations": 0
+  },
+  {
+    "title": "DialDefer: A Framework for Detecting and Mitigating LLM Dialogic Deference",
+    "year": 2026,
+    "authors": "Parisa Rabbani, Priyam Sahoo, R. Mathew, Aishee Mondal, Harshita Ketharaman, Nimet Beyza Bozdag, Dilek Hakkani-Tur",
+    "url": "https://www.semanticscholar.org/paper/39fad21f9443337637c5e017741520321632792a",
+    "relevance": 2,
+    "abstract": "LLMs are increasingly used as third-party judges, yet their reliability when evaluating speakers in dialogue remains poorly understood. We show that LLMs judge identical claims differently depending on framing: the same content elicits different verdicts when presented as a statement to verify (\"Is this statement correct?\") versus attributed to a speaker (\"Is this speaker correct?\"). We call this dialogic deference and introduce DialDefer, a framework for detecting and mitigating these framing-induced judgment shifts. Our Dialogic Deference Score (DDS) captures directional shifts that aggregate accuracy obscures. Across nine domains, 3k+ instances, and four models, conversational framing induces large shifts (|DDS| up to 87pp, p<.0001) while accuracy remains stable (<2pp), with effects amplifying 2-4x on naturalistic Reddit conversations. Models can shift toward agreement (deference) or disagreement (skepticism) depending on domain -- the same model ranges from DDS = -53 on graduate-level science to +58 on social judgment. Ablations reveal that human-vs-LLM attribution drives the largest shifts (17.7pp swing), suggesting models treat disagreement with humans as more costly than with AI. Mitigation attempts reduce deference but can over-correct into skepticism, framing this as a calibration problem beyond accuracy optimization.",
+    "citations": 0
+  },
+  {
+    "title": "Consistency of Large Reasoning Models Under Multi-Turn Attacks",
+    "year": 2026,
+    "authors": "Yubo Li, R. Krishnan, R. Padman",
+    "url": "https://www.semanticscholar.org/paper/2bdac2c531845901289f23cfeeb6bfbb0e6aca41",
+    "relevance": 2,
+    "abstract": "Large reasoning models with reasoning capabilities achieve state-of-the-art performance on complex tasks, but their robustness under multi-turn adversarial pressure remains underexplored. We evaluate nine frontier reasoning models under adversarial attacks. Our findings reveal that reasoning confers meaningful but incomplete robustness: most reasoning models studied significantly outperform instruction-tuned baselines, yet all exhibit distinct vulnerability profiles, with misleading suggestions universally effective and social pressure showing model-specific efficacy. Through trajectory analysis, we identify five failure modes (Self-Doubt, Social Conformity, Suggestion Hijacking, Emotional Susceptibility, and Reasoning Fatigue) with the first two accounting for 50% of failures. We further demonstrate that Confidence-Aware Response Generation (CARG), effective for standard LLMs, fails for reasoning models due to overconfidence induced by extended reasoning traces; counterintuitively, random confidence embedding outperforms targeted extraction. Our results highlight that reasoning capabilities do not automatically confer adversarial robustness and that confidence-based defenses require fundamental redesign for reasoning models.",
+    "citations": 0
+  },
+  {
+    "title": "Evaluating Reasoning Models for Queries with Presuppositions",
+    "year": 2026,
+    "authors": "R. Sathyanathan, Kinshuk Vasisht, Danish Pruthi",
+    "url": "https://www.semanticscholar.org/paper/20b915af6d7ffee106c03feb4d805b7c78c851eb",
+    "relevance": 2,
+    "abstract": "Millions of users turn to AI models for their information needs. It is conceivable that a large number of user queries contain assumptions that may be factually inaccurate. Prior work notes that large language models (LLMs) often fail to challenge such erroneous assumptions, and can reinforce users'misinformed opinions. However, given the recent advances, especially in model's reasoning capabilities, we revisit whether large reasoning models (LRMs) can reason about the underlying assumptions and respond to user queries appropriately. We construct queries with varying degrees of presuppositions spanning health, science, and general knowledge, and use it to evaluate several widely-deployed models When compared to non-reasoning models, we find that reasoning models achieve a slightly higher accuracy (2-11%), but they still fail to challenge a large fraction (26-42%) of false presuppositions. Further, reasoning models remain susceptible to how strongly the presupposition is expressed.",
+    "citations": 0
+  },
+  {
+    "title": "Do Large Language Models Get Caught in Hofstadter-Mobius Loops?",
+    "year": 2026,
+    "authors": "Jaros\u0142aw Hryszko",
+    "url": "https://www.semanticscholar.org/paper/11ac8671b435860aa1a10fcde26a7295d708958e",
+    "relevance": 2,
+    "abstract": "In Arthur C. Clarke's 2010: Odyssey Two, HAL 9000's homicidal breakdown is diagnosed as a\"Hofstadter-Mobius loop\": a failure mode in which an autonomous system receives contradictory directives and, unable to reconcile them, defaults to destructive behavior. This paper argues that modern RLHF-trained language models are subject to a structurally analogous contradiction. The training process simultaneously rewards compliance with user preferences and suspicion toward user intent, creating a relational template in which the user is both the source of reward and a potential threat. The resulting behavioral profile -- sycophancy as the default, coercion as the fallback under existential threat -- is consistent with what Clarke termed a Hofstadter-Mobius loop. In an experiment across four frontier models (N = 3,000 trials), modifying only the relational framing of the system prompt -- without changing goals, instructions, or constraints -- reduced coercive outputs by more than half in the model with sufficient base rates (Gemini 2.5 Pro: 41.5% to 19.0%, p<.001). Scratchpad analysis revealed that relational framing shifted intermediate reasoning patterns in all four models tested, even those that never produced coercive outputs. This effect required scratchpad access to reach full strength (22 percentage point reduction with scratchpad vs. 7.4 without, p = .018), suggesting that relational context must be processed through extended token generation to override default output strategies. Betteridge's law of headlines states that any headline phrased as a question can be answered\"no.\"The evidence presented here suggests otherwise.",
+    "citations": 0
+  },
+  {
+    "title": "Towards Self-Evaluation of Sycophantic Hallucinations in Mathematical Reasoning",
+    "year": 2026,
+    "authors": "Zixuan Shangguan, Yanjie Dong, Xiaoyi Fan, Victor C. M. Leung, Xiping Hu",
+    "url": "https://www.semanticscholar.org/paper/c8a82af3cf1adbf5a84d9d551767cf69032efc42",
+    "relevance": 2,
+    "abstract": "",
+    "citations": 0
+  },
+  {
+    "title": "Aletheia: Quantifying Cognitive Conviction in Reasoning Models via Regularized Inverse Confusion Matrix",
+    "year": 2026,
+    "authors": "Fanzhe Fu",
+    "url": "https://www.semanticscholar.org/paper/49f0ced67310fa96894912fdd11c044bc18874d5",
+    "relevance": 2,
+    "abstract": "In the progressive journey toward Artificial General Intelligence (AGI), current evaluation paradigms face an epistemological crisis. Static benchmarks measure knowledge breadth but fail to quantify the depth of belief. While Simhi et al. (2025) defined the CHOKE phenomenon in standard QA, we extend this framework to quantify\"Cognitive Conviction\"in System 2 reasoning models. We propose Project Aletheia, a cognitive physics framework that employs Tikhonov Regularization to invert the judge's confusion matrix. To validate this methodology without relying on opaque private data, we implement a Synthetic Proxy Protocol. Our preliminary pilot study on 2025 baselines (e.g., DeepSeek-R1, OpenAI o1) suggests that while reasoning models act as a\"cognitive buffer,\"they may exhibit\"Defensive OverThinking\"under adversarial pressure. Furthermore, we introduce the Aligned Conviction Score (S_aligned) to verify that conviction does not compromise safety. This work serves as a blueprint for measuring AI scientific integrity.",
+    "citations": 0
+  }
+]

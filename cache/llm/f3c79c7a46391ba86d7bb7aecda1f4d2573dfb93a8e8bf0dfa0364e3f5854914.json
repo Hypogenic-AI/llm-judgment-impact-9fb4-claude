@@ -1,0 +1,1 @@
+{"content": "Let's define variables:\n\nLet H = number of copies Harald sold.\nMarilyn sold 10 times as many, so she sold 10H.\n\nCombined, they sold:\nH + 10H = 88,000\n11H = 88,000\n\nNow, solve for H:\nH = 88,000 / 11\nH = 8,000\n\nSo, Harald sold 8,000 copies.\n\nAnswer: 8000", "prompt_tokens": 97, "completion_tokens": 91, "total_tokens": 188, "model": "gpt-4.1"}

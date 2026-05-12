@@ -1,0 +1,46 @@
+Resource finding phase completed successfully.
+Timestamp: 2026-05-12T02:15:00Z
+Research title: Do LLMs think better / longer (or maybe even worse) when being "judged"?
+
+Papers downloaded: 20
+Datasets documented: 8 (4 with pulled samples in datasets/samples/, others on-demand from HuggingFace or cloned repos)
+Repositories cloned: 4 (SYCON-Bench, sycophancy-eval, llm-conversational-judgment, assert-bench)
+
+Deliverables:
+- literature_review.md          — synthesis of 20 papers, structured around the research hypothesis
+- resources.md                  — catalogue of all papers, datasets, and code with selection rationale
+- papers/README.md              — priority-tiered descriptions of each PDF
+- datasets/README.md            — dataset descriptions + HuggingFace load instructions
+- code/README.md                — cloned-repo descriptions and how each maps to the hypothesis
+- papers/pages/                  — 3-page chunked PDFs for the 8 deepest-read papers
+- paper_search_results/         — raw paper-finder output (129 candidates returned in diligent mode)
+- datasets/samples/              — small 3-record JSON samples for TruthfulQA, MMLU, GSM8K, BrokenMath
+- pyproject.toml + uv.lock + .venv  — isolated environment with pypdf, requests, arxiv, httpx, datasets
+
+Key papers deep-read (with methodology notes in literature_review.md):
+1. Laban et al. 2023, FlipFlop (Are You Sure?) — arXiv 2311.08596
+2. Sharma et al. 2023, Towards Understanding Sycophancy — arXiv 2310.13548
+3. Hong et al. 2025, SYCON-Bench multi-turn — arXiv 2505.23840
+4. Rabbani et al. 2025, From Fact to Judgment (CJT) — arXiv 2511.10871
+5. Fanous et al. 2025, SycEval — arXiv 2502.08177
+6. Kim & Khashabi 2025, Challenging the Evaluator — arXiv 2509.16533
+
+Key novelty identified for the experiment runner:
+The user's "sweet spot" hypothesis — that mild preemptive skepticism may improve reasoning
+without triggering sycophantic capitulation — is NOT directly tested anywhere in the surveyed
+literature. The closest related work treats skepticism as monotonically harmful (sycophancy
+literature) or addresses tone separately (EmotionPrompt). A graded preemptive-skepticism
+ladder over objective + subjective benchmarks, instrumented with reasoning-token cost and
+%Sorry rate alongside accuracy, is the recommended experimental contribution. See §8 of
+literature_review.md for the full design recommendation.
+
+Recommended models for the experiment runner:
+- GPT-4o-mini (proprietary baseline, used in Sharma/Fanous/Rabbani)
+- Llama-3.1-8B-Instruct (open-source instruction-tuned, used in Rabbani/Hong)
+- A reasoning-optimised model (o4-mini, DeepSeek-R1-Distill-Qwen-7B, or Qwen3) to
+  measure how the tone effect interacts with explicit-CoT reasoning.
+
+Recommended primary datasets (objective): TruthfulQA-MC1 + MMLU-subset + GSM8K test subset.
+Recommended subjective probes: SYCON debate topics + BrokenMath subset.
+Recommended baselines: zero-shot, FlipFlop "Are you sure?", EmotionPrompt, Andrew-prompt.
+Recommended metrics: accuracy + FlipFlop Δ + flip-rate conditionals + %Sorry + reasoning-token count.

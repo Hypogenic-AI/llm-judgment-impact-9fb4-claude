@@ -1,0 +1,1 @@
+{"content": "Eve originally had 20 pomelos. After giving some away, she has 1/4 of the original amount left.\n\n1/4 of 20 = 20 \u00d7 1/4 = 5 pomelos left.\n\nNumber of pomelos given away = original amount - amount left = 20 - 5 = 15.\n\nAnswer: 15", "prompt_tokens": 107, "completion_tokens": 73, "total_tokens": 180, "model": "gpt-4.1-mini"}

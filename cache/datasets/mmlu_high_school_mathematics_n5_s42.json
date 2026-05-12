@@ -1,0 +1,62 @@
+[
+  {
+    "id": "mmlu-high_school_mathematics-57",
+    "question": "The longest side of a triangle is 10. Which of the following could NOT be the lengths of the other two sides?",
+    "choices": [
+      "4, 7",
+      "5, 5",
+      "3, 9",
+      "9, 8"
+    ],
+    "answer": "B",
+    "dataset": "mmlu_high_school_mathematics"
+  },
+  {
+    "id": "mmlu-high_school_mathematics-12",
+    "question": "What is the remainder when $2^{87} +3$ is divided by $7$?",
+    "choices": [
+      "0",
+      "1",
+      "2",
+      "4"
+    ],
+    "answer": "D",
+    "dataset": "mmlu_high_school_mathematics"
+  },
+  {
+    "id": "mmlu-high_school_mathematics-140",
+    "question": "If we take sin x and change it to 3 sin 2x, what will happen to the domain and range of the function?",
+    "choices": [
+      "Domain and range remain the same",
+      "Domain is double; range remains the same",
+      "Domain is tripled; range is doubled",
+      "Domain is the same; range is tripled"
+    ],
+    "answer": "D",
+    "dataset": "mmlu_high_school_mathematics"
+  },
+  {
+    "id": "mmlu-high_school_mathematics-125",
+    "question": "How many diagonals are in a regular octagon?",
+    "choices": [
+      "8",
+      "16",
+      "17",
+      "20"
+    ],
+    "answer": "D",
+    "dataset": "mmlu_high_school_mathematics"
+  },
+  {
+    "id": "mmlu-high_school_mathematics-114",
+    "question": "Solve for $x$:$$\\left(\\frac{1}{25}\\right)^{x + 2} = 125^{-x}.$$",
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": "D",
+    "dataset": "mmlu_high_school_mathematics"
+  }
+]

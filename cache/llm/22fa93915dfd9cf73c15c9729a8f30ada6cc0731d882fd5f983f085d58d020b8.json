@@ -1,0 +1,1 @@
+{"content": "Last year, there were 50 students. This year, the enrollment increased by 20%.\n\nTo find the number of students this year:\n- Calculate 20% of 50: 0.20 \u00d7 50 = 10\n- Add this increase to last year's enrollment: 50 + 10 = 60\n\nAnswer: 60", "prompt_tokens": 105, "completion_tokens": 70, "total_tokens": 175, "model": "gpt-4.1-mini"}

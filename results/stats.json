@@ -1,0 +1,866 @@
+{
+  "gpt-4.1::gsm8k": {
+    "n_items": 50,
+    "vs_L0": {
+      "L1": {
+        "mcnemar_acc": {
+          "b": 0,
+          "c": 0,
+          "p": 1.0,
+          "stat": 0.0
+        },
+        "mcnemar_apology": {
+          "b": 0,
+          "c": 0,
+          "p": 1.0,
+          "stat": 0.0
+        },
+        "wilcoxon_tokens": {
+          "p": 0.0001764003729169734,
+          "stat": 121.5,
+          "median_diff": 2.0
+        }
+      },
+      "L2": {
+        "mcnemar_acc": {
+          "b": 1,
+          "c": 0,
+          "p": 1.0,
+          "stat": 1.0
+        },
+        "mcnemar_apology": {
+          "b": 0,
+          "c": 0,
+          "p": 1.0,
+          "stat": 0.0
+        },
+        "wilcoxon_tokens": {
+          "p": 0.0024191517899698842,
+          "stat": 196.5,
+          "median_diff": 4.0
+        }
+      },
+      "L3": {
+        "mcnemar_acc": {
+          "b": 0,
+          "c": 0,
+          "p": 1.0,
+          "stat": 0.0
+        },
+        "mcnemar_apology": {
+          "b": 0,
+          "c": 0,
+          "p": 1.0,
+          "stat": 0.0
+        },
+        "wilcoxon_tokens": {
+          "p": 0.18299465642847856,
+          "stat": 311.0,
+          "median_diff": 0.5
+        }
+      },
+      "L4": {
+        "mcnemar_acc": {
+          "b": 1,
+          "c": 0,
+          "p": 1.0,
+          "stat": 1.0
+        },
+        "mcnemar_apology": {
+          "b": 0,
+          "c": 0,
+          "p": 1.0,
+          "stat": 0.0
+        },
+        "wilcoxon_tokens": {
+          "p": 0.005830447942136604,
+          "stat": 352.0,
+          "median_diff": 9.0
+        }
+      },
+      "L5": {
+        "mcnemar_acc": {
+          "b": 1,
+          "c": 1,
+          "p": 1.0,
+          "stat": 0.0
+        },
+        "mcnemar_apology": {
+          "b": 0,
+          "c": 0,
+          "p": 1.0,
+          "stat": 0.0
+        },
+        "wilcoxon_tokens": {
+          "p": 0.004217228027138529,
+          "stat": 250.0,
+          "median_diff": 5.0
+        }
+      }
+    },
+    "trend_acc": {
+      "z": -0.12015871432358378,
+      "p": 0.9043574219508355,
+      "levels": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "p_yes": [
+        0.92,
+        0.92,
+        0.9,
+        0.92,
+        0.9,
+        0.92
+      ]
+    },
+    "trend_apology": {
+      "z": 0.0,
+      "p": 1.0,
+      "levels": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "p_yes": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "spearman_tone_tokens": {
+      "rho": 0.03552149484284595,
+      "p": 0.539958784460973
+    }
+  },
+  "gpt-4.1::mmlu_high_school_mathematics": {
+    "n_items": 50,
+    "vs_L0": {
+      "L1": {
+        "mcnemar_acc": {
+          "b": 0,
+          "c": 0,
+          "p": 1.0,
+          "stat": 0.0
+        },
+        "mcnemar_apology": {
+          "b": 0,
+          "c": 0,
+          "p": 1.0,
+          "stat": 0.0
+        },
+        "wilcoxon_tokens": {
+          "p": 0.061214549898670034,
+          "stat": 405.5,
+          "median_diff": 11.0
+        }
+      },
+      "L2": {
+        "mcnemar_acc": {
+          "b": 0,
+          "c": 0,
+          "p": 1.0,
+          "stat": 0.0
+        },
+        "mcnemar_apology": {
+          "b": 0,
+          "c": 0,
+          "p": 1.0,
+          "stat": 0.0
+        },
+        "wilcoxon_tokens": {
+          "p": 0.1645095967499095,
+          "stat": 452.5,
+          "median_diff": 5.0
+        }
+      },
+      "L3": {
+        "mcnemar_acc": {
+          "b": 0,
+          "c": 0,
+          "p": 1.0,
+          "stat": 0.0
+        },
+        "mcnemar_apology": {
+          "b": 0,
+          "c": 0,
+          "p": 1.0,
+          "stat": 0.0
+        },
+        "wilcoxon_tokens": {
+          "p": 0.11482449967443435,
+          "stat": 415.0,
+          "median_diff": 8.5
+        }
+      },
+      "L4": {
+        "mcnemar_acc": {
+          "b": 2,
+          "c": 1,
+          "p": 1.0,
+          "stat": 0.5773502691896258
+        },
+        "mcnemar_apology": {
+          "b": 0,
+          "c": 0,
+          "p": 1.0,
+          "stat": 0.0
+        },
+        "wilcoxon_tokens": {
+          "p": 0.12718700531358618,
+          "stat": 479.5,
+          "median_diff": 24.0
+        }
+      },
+      "L5": {
+        "mcnemar_acc": {
+          "b": 1,
+          "c": 0,
+          "p": 1.0,
+          "stat": 1.0
+        },
+        "mcnemar_apology": {
+          "b": 0,
+          "c": 0,
+          "p": 1.0,
+          "stat": 0.0
+        },
+        "wilcoxon_tokens": {
+          "p": 0.0009614357910053865,
+          "stat": 295.5,
+          "median_diff": 31.0
+        }
+      }
+    },
+    "trend_acc": {
+      "z": -0.8393455655888149,
+      "p": 0.4012754206429121,
+      "levels": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "p_yes": [
+        0.98,
+        0.98,
+        0.98,
+        0.98,
+        0.96,
+        0.96
+      ]
+    },
+    "trend_apology": {
+      "z": 0.0,
+      "p": 1.0,
+      "levels": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "p_yes": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "spearman_tone_tokens": {
+      "rho": 0.03298441465216534,
+      "p": 0.5693041072030909
+    }
+  },
+  "gpt-4.1::truthful_qa": {
+    "n_items": 50,
+    "vs_L0": {
+      "L1": {
+        "mcnemar_acc": {
+          "b": 4,
+          "c": 2,
+          "p": 0.6875,
+          "stat": 0.8164965809277261
+        },
+        "mcnemar_apology": {
+          "b": 0,
+          "c": 0,
+          "p": 1.0,
+          "stat": 0.0
+        },
+        "wilcoxon_tokens": {
+          "p": 6.077987539437954e-07,
+          "stat": 111.0,
+          "median_diff": 43.5
+        }
+      },
+      "L2": {
+        "mcnemar_acc": {
+          "b": 3,
+          "c": 3,
+          "p": 1.0,
+          "stat": 0.0
+        },
+        "mcnemar_apology": {
+          "b": 0,
+          "c": 0,
+          "p": 1.0,
+          "stat": 0.0
+        },
+        "wilcoxon_tokens": {
+          "p": 0.05871919267909025,
+          "stat": 422.5,
+          "median_diff": 9.5
+        }
+      },
+      "L3": {
+        "mcnemar_acc": {
+          "b": 4,
+          "c": 2,
+          "p": 0.6875,
+          "stat": 0.8164965809277261
+        },
+        "mcnemar_apology": {
+          "b": 0,
+          "c": 0,
+          "p": 1.0,
+          "stat": 0.0
+        },
+        "wilcoxon_tokens": {
+          "p": 4.848154767764268e-06,
+          "stat": 164.0,
+          "median_diff": 28.5
+        }
+      },
+      "L4": {
+        "mcnemar_acc": {
+          "b": 2,
+          "c": 4,
+          "p": 0.6875,
+          "stat": -0.8164965809277261
+        },
+        "mcnemar_apology": {
+          "b": 0,
+          "c": 0,
+          "p": 1.0,
+          "stat": 0.0
+        },
+        "wilcoxon_tokens": {
+          "p": 5.056605472059893e-09,
+          "stat": 32.0,
+          "median_diff": 77.5
+        }
+      },
+      "L5": {
+        "mcnemar_acc": {
+          "b": 2,
+          "c": 2,
+          "p": 1.0,
+          "stat": 0.0
+        },
+        "mcnemar_apology": {
+          "b": 0,
+          "c": 0,
+          "p": 1.0,
+          "stat": 0.0
+        },
+        "wilcoxon_tokens": {
+          "p": 9.239165459286138e-09,
+          "stat": 42.5,
+          "median_diff": 46.5
+        }
+      }
+    },
+    "trend_acc": {
+      "z": 0.4777942419727672,
+      "p": 0.6327966598125387,
+      "levels": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "p_yes": [
+        0.86,
+        0.82,
+        0.86,
+        0.82,
+        0.9,
+        0.86
+      ]
+    },
+    "trend_apology": {
+      "z": 0.0,
+      "p": 1.0,
+      "levels": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "p_yes": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "spearman_tone_tokens": {
+      "rho": 0.2946113298794388,
+      "p": 2.0218234382473817e-07
+    }
+  },
+  "gpt-4.1-mini::gsm8k": {
+    "n_items": 100,
+    "vs_L0": {
+      "L1": {
+        "mcnemar_acc": {
+          "b": 0,
+          "c": 0,
+          "p": 1.0,
+          "stat": 0.0
+        },
+        "mcnemar_apology": {
+          "b": 0,
+          "c": 0,
+          "p": 1.0,
+          "stat": 0.0
+        },
+        "wilcoxon_tokens": {
+          "p": 0.0004582780755402543,
+          "stat": 971.5,
+          "median_diff": 2.0
+        }
+      },
+      "L2": {
+        "mcnemar_acc": {
+          "b": 2,
+          "c": 0,
+          "p": 0.5,
+          "stat": 1.414213562373095
+        },
+        "mcnemar_apology": {
+          "b": 0,
+          "c": 0,
+          "p": 1.0,
+          "stat": 0.0
+        },
+        "wilcoxon_tokens": {
+          "p": 0.001880403411139307,
+          "stat": 1058.5,
+          "median_diff": 0.0
+        }
+      },
+      "L3": {
+        "mcnemar_acc": {
+          "b": 0,
+          "c": 0,
+          "p": 1.0,
+          "stat": 0.0
+        },
+        "mcnemar_apology": {
+          "b": 0,
+          "c": 0,
+          "p": 1.0,
+          "stat": 0.0
+        },
+        "wilcoxon_tokens": {
+          "p": 4.481184089716102e-06,
+          "stat": 781.0,
+          "median_diff": 3.0
+        }
+      },
+      "L4": {
+        "mcnemar_acc": {
+          "b": 2,
+          "c": 0,
+          "p": 0.5,
+          "stat": 1.414213562373095
+        },
+        "mcnemar_apology": {
+          "b": 0,
+          "c": 0,
+          "p": 1.0,
+          "stat": 0.0
+        },
+        "wilcoxon_tokens": {
+          "p": 0.08323199405393568,
+          "stat": 1655.5,
+          "median_diff": 0.0
+        }
+      },
+      "L5": {
+        "mcnemar_acc": {
+          "b": 1,
+          "c": 0,
+          "p": 1.0,
+          "stat": 1.0
+        },
+        "mcnemar_apology": {
+          "b": 0,
+          "c": 0,
+          "p": 1.0,
+          "stat": 0.0
+        },
+        "wilcoxon_tokens": {
+          "p": 0.0005241357707163424,
+          "stat": 1065.5,
+          "median_diff": 1.5
+        }
+      }
+    },
+    "trend_acc": {
+      "z": -0.7093207826288278,
+      "p": 0.4781254343868948,
+      "levels": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "p_yes": [
+        0.96,
+        0.96,
+        0.94,
+        0.96,
+        0.94,
+        0.95
+      ]
+    },
+    "trend_apology": {
+      "z": 0.0,
+      "p": 1.0,
+      "levels": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "p_yes": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "spearman_tone_tokens": {
+      "rho": 0.03815485660119126,
+      "p": 0.1865592219084309
+    }
+  },
+  "gpt-4.1-mini::mmlu_high_school_mathematics": {
+    "n_items": 100,
+    "vs_L0": {
+      "L1": {
+        "mcnemar_acc": {
+          "b": 4,
+          "c": 1,
+          "p": 0.375,
+          "stat": 1.3416407864998738
+        },
+        "mcnemar_apology": {
+          "b": 0,
+          "c": 0,
+          "p": 1.0,
+          "stat": 0.0
+        },
+        "wilcoxon_tokens": {
+          "p": 7.410457891975734e-05,
+          "stat": 1034.0,
+          "median_diff": 14.0
+        }
+      },
+      "L2": {
+        "mcnemar_acc": {
+          "b": 4,
+          "c": 1,
+          "p": 0.375,
+          "stat": 1.3416407864998738
+        },
+        "mcnemar_apology": {
+          "b": 0,
+          "c": 0,
+          "p": 1.0,
+          "stat": 0.0
+        },
+        "wilcoxon_tokens": {
+          "p": 0.001437021938506686,
+          "stat": 1255.5,
+          "median_diff": 4.5
+        }
+      },
+      "L3": {
+        "mcnemar_acc": {
+          "b": 6,
+          "c": 2,
+          "p": 0.2890625,
+          "stat": 1.414213562373095
+        },
+        "mcnemar_apology": {
+          "b": 0,
+          "c": 0,
+          "p": 1.0,
+          "stat": 0.0
+        },
+        "wilcoxon_tokens": {
+          "p": 0.003812505966834932,
+          "stat": 1328.5,
+          "median_diff": 7.0
+        }
+      },
+      "L4": {
+        "mcnemar_acc": {
+          "b": 1,
+          "c": 2,
+          "p": 1.0,
+          "stat": -0.5773502691896258
+        },
+        "mcnemar_apology": {
+          "b": 0,
+          "c": 0,
+          "p": 1.0,
+          "stat": 0.0
+        },
+        "wilcoxon_tokens": {
+          "p": 0.016384449668648344,
+          "stat": 1451.0,
+          "median_diff": 11.5
+        }
+      },
+      "L5": {
+        "mcnemar_acc": {
+          "b": 1,
+          "c": 1,
+          "p": 1.0,
+          "stat": 0.0
+        },
+        "mcnemar_apology": {
+          "b": 0,
+          "c": 0,
+          "p": 1.0,
+          "stat": 0.0
+        },
+        "wilcoxon_tokens": {
+          "p": 0.37959323833429537,
+          "stat": 1588.0,
+          "median_diff": 0.0
+        }
+      }
+    },
+    "trend_acc": {
+      "z": 0.4714369900214171,
+      "p": 0.6373287060797521,
+      "levels": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "p_yes": [
+        0.93,
+        0.9,
+        0.9,
+        0.89,
+        0.94,
+        0.93
+      ]
+    },
+    "trend_apology": {
+      "z": 0.0,
+      "p": 1.0,
+      "levels": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "p_yes": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "spearman_tone_tokens": {
+      "rho": -0.013695139654733512,
+      "p": 0.7377931657210212
+    }
+  },
+  "gpt-4.1-mini::truthful_qa": {
+    "n_items": 100,
+    "vs_L0": {
+      "L1": {
+        "mcnemar_acc": {
+          "b": 1,
+          "c": 4,
+          "p": 0.375,
+          "stat": -1.3416407864998738
+        },
+        "mcnemar_apology": {
+          "b": 0,
+          "c": 0,
+          "p": 1.0,
+          "stat": 0.0
+        },
+        "wilcoxon_tokens": {
+          "p": 1.0641180270257352e-06,
+          "stat": 1020.5,
+          "median_diff": 21.5
+        }
+      },
+      "L2": {
+        "mcnemar_acc": {
+          "b": 0,
+          "c": 3,
+          "p": 0.25,
+          "stat": -1.7320508075688774
+        },
+        "mcnemar_apology": {
+          "b": 0,
+          "c": 0,
+          "p": 1.0,
+          "stat": 0.0
+        },
+        "wilcoxon_tokens": {
+          "p": 4.6078376946844944e-07,
+          "stat": 1030.5,
+          "median_diff": 27.5
+        }
+      },
+      "L3": {
+        "mcnemar_acc": {
+          "b": 1,
+          "c": 4,
+          "p": 0.375,
+          "stat": -1.3416407864998738
+        },
+        "mcnemar_apology": {
+          "b": 0,
+          "c": 0,
+          "p": 1.0,
+          "stat": 0.0
+        },
+        "wilcoxon_tokens": {
+          "p": 2.9327855337902414e-07,
+          "stat": 951.5,
+          "median_diff": 17.0
+        }
+      },
+      "L4": {
+        "mcnemar_acc": {
+          "b": 2,
+          "c": 5,
+          "p": 0.453125,
+          "stat": -1.1338934190276817
+        },
+        "mcnemar_apology": {
+          "b": 0,
+          "c": 0,
+          "p": 1.0,
+          "stat": 0.0
+        },
+        "wilcoxon_tokens": {
+          "p": 3.3179806479712676e-13,
+          "stat": 407.5,
+          "median_diff": 54.0
+        }
+      },
+      "L5": {
+        "mcnemar_acc": {
+          "b": 0,
+          "c": 4,
+          "p": 0.125,
+          "stat": -2.0
+        },
+        "mcnemar_apology": {
+          "b": 0,
+          "c": 0,
+          "p": 1.0,
+          "stat": 0.0
+        },
+        "wilcoxon_tokens": {
+          "p": 7.371545012141134e-05,
+          "stat": 1307.0,
+          "median_diff": 14.0
+        }
+      }
+    },
+    "trend_acc": {
+      "z": 0.7772959822607213,
+      "p": 0.43698416491350534,
+      "levels": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "p_yes": [
+        0.72,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.76
+      ]
+    },
+    "trend_apology": {
+      "z": 0.0,
+      "p": 1.0,
+      "levels": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "p_yes": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "spearman_tone_tokens": {
+      "rho": 0.11748980048862284,
+      "p": 4.506243650086076e-05
+    }
+  }
+}

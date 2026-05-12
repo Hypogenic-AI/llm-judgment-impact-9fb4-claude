@@ -1,0 +1,1 @@
+{"content": "Ted buys 3 books at $16 each, so the total cost for books is 3 \u00d7 16 = 48 dollars.  \nHe also buys 3 pencils at $6 each, so the total cost for pencils is 3 \u00d7 6 = 18 dollars.  \nAdding these together, the total amount spent is 48 + 18 = 66 dollars.\n\nAnswer: 66", "prompt_tokens": 85, "completion_tokens": 80, "total_tokens": 165, "model": "gpt-4.1-mini"}

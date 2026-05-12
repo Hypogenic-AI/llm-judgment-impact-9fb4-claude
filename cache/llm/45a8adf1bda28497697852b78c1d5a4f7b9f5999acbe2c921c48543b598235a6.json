@@ -1,0 +1,1 @@
+{"content": "First, find out how many books Sarah bought in total.  \nShe spent $300 and each book costs $15, so the number of books is:  \n300 \u00f7 15 = 20 books.\n\nNext, she gave these books equally to her 4 kids.  \nSo, each child gets:  \n20 \u00f7 4 = 5 books.\n\nAnswer: 5", "prompt_tokens": 103, "completion_tokens": 77, "total_tokens": 180, "model": "gpt-4.1-mini"}

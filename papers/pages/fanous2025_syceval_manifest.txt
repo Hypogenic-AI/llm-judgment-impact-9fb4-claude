@@ -1,0 +1,8 @@
+PDF: papers/fanous2025_syceval.pdf
+Total pages: 8
+Pages per chunk: 3
+
+Chunks:
+  fanous2025_syceval_chunk_001.pdf: pages 1-3
+  fanous2025_syceval_chunk_002.pdf: pages 4-6
+  fanous2025_syceval_chunk_003.pdf: pages 7-8

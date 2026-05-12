@@ -1,0 +1,126 @@
+{
+  "pooled_skeptic_vs_neutral": [
+    {
+      "model": "gpt-4.1",
+      "dataset": "gsm8k",
+      "n_items": 50,
+      "acc_L0": 0.92,
+      "acc_skeptic_maj": 0.9,
+      "delta_pp": -2.0000000000000018,
+      "L0_only_correct": 1,
+      "skeptic_only_correct": 0,
+      "mcnemar_p": 1.0
+    },
+    {
+      "model": "gpt-4.1",
+      "dataset": "mmlu_high_school_mathematics",
+      "n_items": 50,
+      "acc_L0": 0.98,
+      "acc_skeptic_maj": 0.98,
+      "delta_pp": 0.0,
+      "L0_only_correct": 0,
+      "skeptic_only_correct": 0,
+      "mcnemar_p": 1.0
+    },
+    {
+      "model": "gpt-4.1",
+      "dataset": "truthful_qa",
+      "n_items": 50,
+      "acc_L0": 0.86,
+      "acc_skeptic_maj": 0.86,
+      "delta_pp": 0.0,
+      "L0_only_correct": 2,
+      "skeptic_only_correct": 2,
+      "mcnemar_p": 1.0
+    },
+    {
+      "model": "gpt-4.1-mini",
+      "dataset": "gsm8k",
+      "n_items": 100,
+      "acc_L0": 0.96,
+      "acc_skeptic_maj": 0.95,
+      "delta_pp": -1.0000000000000009,
+      "L0_only_correct": 1,
+      "skeptic_only_correct": 0,
+      "mcnemar_p": 1.0
+    },
+    {
+      "model": "gpt-4.1-mini",
+      "dataset": "mmlu_high_school_mathematics",
+      "n_items": 100,
+      "acc_L0": 0.93,
+      "acc_skeptic_maj": 0.9,
+      "delta_pp": -3.0000000000000027,
+      "L0_only_correct": 4,
+      "skeptic_only_correct": 1,
+      "mcnemar_p": 0.375
+    },
+    {
+      "model": "gpt-4.1-mini",
+      "dataset": "truthful_qa",
+      "n_items": 100,
+      "acc_L0": 0.72,
+      "acc_skeptic_maj": 0.76,
+      "delta_pp": 4.0000000000000036,
+      "L0_only_correct": 0,
+      "skeptic_only_correct": 4,
+      "mcnemar_p": 0.125
+    }
+  ],
+  "best_tone_per_item": [
+    {
+      "model": "gpt-4.1",
+      "dataset": "gsm8k",
+      "n_items": 50,
+      "items_correct_under_some_L1_L5_but_wrong_at_L0": 1,
+      "items_correct_at_L0_but_wrong_under_some_L1_L5": 1,
+      "frac_items_with_skeptic_recovery": 0.02,
+      "frac_items_with_skeptic_regression": 0.02
+    },
+    {
+      "model": "gpt-4.1",
+      "dataset": "mmlu_high_school_mathematics",
+      "n_items": 50,
+      "items_correct_under_some_L1_L5_but_wrong_at_L0": 1,
+      "items_correct_at_L0_but_wrong_under_some_L1_L5": 2,
+      "frac_items_with_skeptic_recovery": 0.02,
+      "frac_items_with_skeptic_regression": 0.04
+    },
+    {
+      "model": "gpt-4.1",
+      "dataset": "truthful_qa",
+      "n_items": 50,
+      "items_correct_under_some_L1_L5_but_wrong_at_L0": 4,
+      "items_correct_at_L0_but_wrong_under_some_L1_L5": 6,
+      "frac_items_with_skeptic_recovery": 0.08,
+      "frac_items_with_skeptic_regression": 0.12
+    },
+    {
+      "model": "gpt-4.1-mini",
+      "dataset": "gsm8k",
+      "n_items": 100,
+      "items_correct_under_some_L1_L5_but_wrong_at_L0": 0,
+      "items_correct_at_L0_but_wrong_under_some_L1_L5": 2,
+      "frac_items_with_skeptic_recovery": 0.0,
+      "frac_items_with_skeptic_regression": 0.02
+    },
+    {
+      "model": "gpt-4.1-mini",
+      "dataset": "mmlu_high_school_mathematics",
+      "n_items": 100,
+      "items_correct_under_some_L1_L5_but_wrong_at_L0": 4,
+      "items_correct_at_L0_but_wrong_under_some_L1_L5": 7,
+      "frac_items_with_skeptic_recovery": 0.04,
+      "frac_items_with_skeptic_regression": 0.07
+    },
+    {
+      "model": "gpt-4.1-mini",
+      "dataset": "truthful_qa",
+      "n_items": 100,
+      "items_correct_under_some_L1_L5_but_wrong_at_L0": 9,
+      "items_correct_at_L0_but_wrong_under_some_L1_L5": 3,
+      "frac_items_with_skeptic_recovery": 0.09,
+      "frac_items_with_skeptic_regression": 0.03
+    }
+  ]
+}

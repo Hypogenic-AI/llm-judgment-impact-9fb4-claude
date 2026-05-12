@@ -1,0 +1,1 @@
+{"content": "Let's calculate Jane's mean score step by step.\n\nFirst, add up all her quiz scores:\n98 + 97 + 92 + 85 + 93 = 465\n\nNext, count the number of scores:\nThere are 5 scores.\n\nNow, divide the total by the number of scores to find the mean:\n465 \u00f7 5 = 93\n\nAnswer: B", "prompt_tokens": 106, "completion_tokens": 77, "total_tokens": 183, "model": "gpt-4.1"}

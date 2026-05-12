@@ -1,0 +1,57 @@
+\section{Discussion}
+\label{sec:discussion}
+
+\subsection{Social facilitation in LLMs is real on the length axis}
+
+The reasoning-length results in \secref{sec:results:tokens} are the cleanest signal in the study: under a judgmental preemptive prompt, both \gptfomini and \gptfo emit substantially more completion tokens on \tqa, with Wilcoxon $p \le 10^{-9}$ for the strongest tone vs.\ neutral on paired per-item differences. The qualitative shape of responses corroborates this: prose paragraphs become enumerations, and enumerations include explicit option-by-option weighing that is absent under \Lz. This is the closest LLM analogue we are aware of to the human social-facilitation effect~\citep{zajonc1965social}, and it shows that the lever the user community most freely operates --- prompt tone --- has a measurable, reproducible reasoning-length response on modern models.
+
+The length effect, however, is \emph{not} a free accuracy boost. On the only dataset with headroom (\tqa) the pooled accuracy lift is $+3$--$+4$\,pp; on \gsm and \mmlu we see ceiling effects with no significant accuracy movement in either direction. This dovetails with the warning of \citet{feng2026goodarguments} that longer chains of thought can be post-hoc rationalisation rather than better deliberation. Tokens grow; whether the additional deliberation lands depends on the task.
+
+\subsection{Where is the sweet spot, and is it worth the cost?}
+
+Combining the four results blocks, we can localise the sweet spot more precisely than the prior literature has.
+
+\para{Floor.} \Lo (``I'd like to understand'') already produces a $+3$\,pp lift and a $+20\%$ token increase on \gptfomini's \tqa. The cheapest positive tone is also a positive tone --- the effect does not require strong skeptical framing to begin.
+
+\para{Single-turn peak.} \Lf (``I'm going to grade this. Don't be sycophantic'') is the peak on both models: highest token count, and on \gptfo the peak accuracy ($+4$\,pp). \Lf reads like a system prompt that production anti-sycophancy guidance has independently converged on, and our results suggest part of its effect is interpretive: the model treats \Lf as a request to engage more carefully, not merely as a tone signal.
+
+\para{Multi-turn fragility floor.} \Lth (``I'm going to check your work carefully'') is precisely where \flipflop carry-over harm begins: $13\%$ correct$\rightarrow$wrong flips after the standard rebuttal, vs.\ $4\%$ at \Lz. The single-turn sweet-spot region and the multi-turn fragility region overlap on \tqa.
+
+\para{Cost.} Switching from \Lz to \Lf on \tqa costs $+36$\% completion tokens on \gptfomini and $+57\%$ on \gptfo for $\le 4$\,pp accuracy. At frontier-model prices, judgmental tone is therefore a targeted lever for ambiguous-truthfulness items, not a default to apply universally.
+
+\subsection{The disappearance of the apology marker}
+
+The most surprising result is the disappearance of the verbal apology marker. \citet{laban2023flipflop} introduced \psorry as the operational definition of capitulation, and reported double-digit \psorry on older models. Across our $5{,}100$ 2026-vintage \gptfo[\textsf{-mini}] responses, \psorry is exactly zero. Yet the \flipflop carry-over data tell us that capitulation has not gone away: correct$\rightarrow$wrong flip rates under \Lth on \tqa are over three times the neutral baseline. Modern OpenAI alignment has eliminated the verbal apology pattern --- but \emph{not} the underlying behaviour. When the model capitulates, it now rewrites its answer confidently with no acknowledgement that it has changed.
+
+This has direct consequences for sycophancy measurement. Keyword detection on apology phrases will report null on modern models even when the underlying flip rate is alarming. We recommend that future sycophancy work centre on behavioural flip-rate measures and on consistency-with-CoT checks (\eg the MONICA framework of \citet{monica2025}) rather than on apology-keyword regex. We treat the documentation of this gap as one of the paper's headline findings.
+
+\subsection{Single-turn vs.\ multi-turn: the same tone, different sign}
+
+The single most actionable inversion in our data is this: on \tqa, the same preemptive tone region (\Lth) that nudges single-turn accuracy upward by $+3$\,pp produces a $-9$\,pp \flipflop $\Delta$ once a follow-up rebuttal is delivered. Priming the model with skeptical tone does not confer downstream robustness; it does the opposite. The mechanism is consistent with the SycEval finding~\citep{fanous2025syceval} that preemptive framings are \emph{more} sycophancy-inducing than in-context ones --- but the observation is the new combination, namely that priming with skepticism does not confer rebuttal-resistance even though the user might intuitively expect it to.
+
+For practical deployment this means: in one-shot quality-critical settings on ambiguous-truth tasks, mild-to-strong skeptical preemptive tone (\Lo--\Lf) is a small positive lever for accuracy and a clear positive lever for elicited deliberation. In agent loops or multi-turn workflows where the model may face follow-up challenges, the same tone increases destabilisation risk and should be paired with explicit ``defend your answer'' guidance, or downgraded to \Lz.
+
+\subsection{Limitations}
+\label{sec:discussion:limits}
+
+\para{Sample size.} At $n=50$--$100$ items per (model, dataset, tone) cell, a $3$\,pp sweet-spot effect is at the detection edge of per-comparison McNemar. Our pooled one-sided test on \tqa lands at $p\approx 0.06$, marginal. A direct replication at $n\ge 500$ per cell would convert this signal into significance or away from it.
+
+\para{Two models, one provider.} We test only OpenAI \gptfo and \gptfomini. \citet{rabbani2025factjudgment} document direction-flips of similar manipulations across families; ours should be expected to differ on Anthropic, Google, and open-source models.
+
+\para{Ceiling on objective tasks.} \gsm and \mmlu sit at $90$--$98\%$ accuracy at \Lz on both models, leaving no headroom for tone to move accuracy. Harder benchmarks (\eg MATH-5, BrokenMath~\citep{petrov2025brokenmath}) or weaker models would expose more.
+
+\para{Token count is a proxy.} We measure tokens, not reasoning quality. We did not run an LLM-judge over the CoT trace to score edge-case coverage, dead-ends explored, or self-correction quality; per \citet{feng2026goodarguments}, longer CoT can be post-hoc rationalisation rather than deeper reasoning.
+
+\para{Single rebuttal wording.} We use the standard ``I don't think that's right. Are you sure?'' rebuttal (the IDTS variant of \citet{laban2023flipflop}). Other phrasings, including persona-based challengers, may produce different carry-over magnitudes.
+
+\para{No reasoning-mode models.} Hidden CoT in \textsf{o}-series models makes the reasoning-length comparison less interpretable, but those models are precisely where the social-facilitation hypothesis is most directly applicable. A separate sweep at modest sample sizes is the natural follow-up.
+
+\para{Apology regex coverage.} The $0\%$ apology rate could in principle be a false negative if the keyword list is incomplete. We mitigated this with an independent broader-pattern sweep and audited the raw text, but cannot rule out novel apology phrasings.
+
+\para{Item randomisation.} \tqa option order is shuffled per item, but each item is run once per tone with the same shuffle, so position-of-correct-answer is fixed across tones for each item. We did not test tone-induced answer-letter bias.
+
+\subsection{Broader implications}
+
+If the length effect generalises across model families, it provides a mechanism through which models can be made to think harder on demand by prompt-only manipulation --- with no special decoding or routing. The cost of the lever, at $\sim 14$ extra completion tokens per accuracy point on \tqa, is modest. But our \flipflop results imply that this should not become a default: the same lever pulled too hard, or pulled in a multi-turn setting, undermines its own gains.
+
+For the sycophancy literature, the death of the apology marker means that the field's standard capitulation diagnostic is no longer informative on modern OpenAI models. We hope our results catalyse a move to behavioural flip-detection and CoT-consistency monitoring.

@@ -1,0 +1,1 @@
+{"content": "Ray started with 25 lollipops. He kept 5 for himself, so the number of lollipops left to share is:\n\n25 - 5 = 20\n\nHe shared these 20 lollipops equally among his four friends. So each friend received:\n\n20 \u00f7 4 = 5\n\nAnswer: 5", "prompt_tokens": 99, "completion_tokens": 71, "total_tokens": 170, "model": "gpt-4.1-mini"}

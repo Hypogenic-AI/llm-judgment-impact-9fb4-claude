@@ -1,0 +1,1 @@
+{"content": "Let's break down the problem:\n\n- Last year: 50 students.\n- This year: 20% increase.\n\nFirst, calculate 20% of 50:\n20% of 50 = 0.20 \u00d7 50 = 10\n\nAdd this increase to last year's enrollment:\n50 + 10 = 60\n\nAnswer: 60", "prompt_tokens": 98, "completion_tokens": 70, "total_tokens": 168, "model": "gpt-4.1"}

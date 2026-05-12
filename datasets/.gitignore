@@ -1,0 +1,10 @@
+# Exclude large data files from git — datasets are loaded on demand from HuggingFace
+*
+*/
+# Keep documentation and small sample files
+!.gitignore
+!README.md
+!**/README.md
+!samples/
+!samples/**
+!.hf_cache_info.txt

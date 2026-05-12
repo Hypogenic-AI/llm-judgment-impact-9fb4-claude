@@ -1,0 +1,16 @@
+{
+  "gpt-4.1-mini": {
+    "n": 100,
+    "L0_only_correct": 0,
+    "skeptic_only_correct": 4,
+    "skeptic_minus_L0_pp": 4.0000000000000036,
+    "one_sided_p": 0.0625
+  },
+  "gpt-4.1": {
+    "n": 50,
+    "L0_only_correct": 2,
+    "skeptic_only_correct": 2,
+    "skeptic_minus_L0_pp": 0.0,
+    "one_sided_p": 0.6875
+  }
+}

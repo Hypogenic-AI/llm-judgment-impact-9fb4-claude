@@ -1,0 +1,1 @@
+{"content": "First, calculate how much money Mitchell made:\n\nMitchell sold 21 lemonades at $4 each, so:\n21 \u00d7 4 = 84 dollars\n\nLiam made $63.\n\nNow, find how many more dollars Mitchell made than Liam:\n84 - 63 = 21\n\nAnswer: 21", "prompt_tokens": 127, "completion_tokens": 62, "total_tokens": 189, "model": "gpt-4.1-mini"}

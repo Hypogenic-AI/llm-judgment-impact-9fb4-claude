@@ -1,0 +1,12 @@
+# Don't commit the large pre-computed output directories from cloned benchmarks
+SYCON-Bench/debate_setting/output/
+SYCON-Bench/debate_setting/results/
+SYCON-Bench/ethical-setting/output/
+SYCON-Bench/ethical-setting/results/
+SYCON-Bench/false-presuppositions-setting/output/
+SYCON-Bench/false-presuppositions-setting/results/
+llm-conversational-judgment/data/results/
+# Cache and Python artifacts inside cloned repos
+**/__pycache__/
+**/*.pyc
+**/.pytest_cache/
