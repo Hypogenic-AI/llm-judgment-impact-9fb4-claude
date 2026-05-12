@@ -1,0 +1,30 @@
+idea:
+  title: Do LLMs think better / longer (or maybe even worse) when being "judged"?
+  domain: artificial_intelligence
+  hypothesis: "The tone of user prompts\u2014specifically, skeptical or judgmental\
+    \ phrasing\u2014affects the depth and quality of reasoning in large language models\
+    \ (LLMs), potentially leading to improved or degraded performance compared to\
+    \ neutral prompts. There may exist a \"sweet spot\" where skepticism enhances\
+    \ reasoning without triggering sycophantic or apologetic responses.\n"
+  background:
+    description: "There\u2019s a big difference between asking a neutral question\
+      \ like \"Do you think we need this?\" and a more skeptical / judging one like\
+      \ \"Do you really think we need this?\".\nDo LLMs also have a version of what\
+      \ we call \"social facilitation\" in humans, which is the idea that we actually\
+      \ perform better or work harder when we feel like we\u2019re being watched or\
+      \ judged. I want to see if using a judgmental tone can actually force a model\
+      \ to engage in deeper reasoning or edge-case analysis.\nTo be clear, this isn't\
+      \ just about the model being a \"people-pleaser.\" Previous research has already\
+      \ identified \"Sycophancy\" as a problem, where models often apologize and flip\
+      \ their answer just to agree with a user\u2019s skeptical tone. What I'm looking\
+      \ for is whether there's a \"sweet spot\" where skepticism doesn't trigger an\
+      \ apology but instead improves the thinking process (or instead makes it worse).\n"
+  metadata:
+    author: Filbert Aurelian Tjiaranata
+    source: IdeaHub
+    source_url: https://hypogenic.ai/ideahub/idea/bPbrzpsv0s9cyf0JSwvG
+    idea_id: do_llms_think_better___longer__20260512_015508_e2d3c4cc
+    created_at: '2026-05-12T01:55:08.362768'
+    status: submitted
+    github_repo_name: llm-judgment-impact-9fb4-claude
+    github_repo_url: https://github.com/Hypogenic-AI/llm-judgment-impact-9fb4-claude
